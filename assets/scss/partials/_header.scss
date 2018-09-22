@@ -4,12 +4,16 @@ HEADER
 .site-header{
   display: block;
   width: 100%;
-  height: 50px;
+  height: 55px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 99999;
   @include transition($transition);
+}
+
+.nav-up {
+  top: -70px;
 }
 
 .top-bar{

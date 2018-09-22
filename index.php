@@ -473,7 +473,7 @@
             </div>
 
             <!-- Social -->
-            <div class="social-category grid-x large-up-4 medium-up-2 small-up-1 box-wave">
+            <div class="social-category grid-x large-up-4 medium-up-3 small-up-2 box-wave">
               <?php
                 $social_category = array(
                   array(

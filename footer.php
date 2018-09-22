@@ -37,6 +37,9 @@
       </div>
     </footer>
     
+    <a class="scroll-top" href="#">
+		  <img class="arrow" src="assets/img/arrow_down_circle.svg" alt="Scroll Up">
+    </a>
     
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/owlcarousel/owl.carousel.min.js"></script>
