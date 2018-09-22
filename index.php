@@ -5,7 +5,7 @@
 
     <!-- Header -->
     <header id="header" class="site-header">
-      <div class="grid-container">
+      <div class="grid-container padding-0">
         <div class="grid-x">
           <div class="cell">
             <div class="top-bar">
@@ -78,10 +78,11 @@
 
     <!-- Section 1: Real World Guidance -->
     <section id="section-1" class="section-padding section-padding-top-large full-height main-bg-svg">
+      
 
       <div class="grid-container">
         <div class="grid-x grid-padding-x">
-          <div class="large-6 large-offset-6 cell">
+          <div class="large-6 large-offset-6 medium-10 medium-offset-1 cell">
 
             <!-- Main -->
             <div class="section-title">
@@ -100,7 +101,7 @@
       <!-- Featured On -->
       <div class="grid-container">
         <div class="grid-x align-center">
-          <div class="large-10 cell">
+          <div class="medium-10 small-11 cell">
             <div class="featured-on">
               <h2 class="stars">Featured on</h2>
               <div id="brands-carousel" class="brands-carousel owl-carousel">
@@ -114,7 +115,7 @@
         </div>
       </div>
       <!-- /Featured On -->
-      
+
     </section>
     <!-- /Section 1 -->
 

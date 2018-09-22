@@ -1,12 +1,26 @@
 /*********************
 SECTION 1
-*********************/ 
+*********************/
 .main-bg-svg{
-  background-image: url(../img/home-featured-image.svg); 
-  background-size: contain;
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-color: $white;
+  position: relative;
+  &:after{
+    content: "";
+    background-image: url(../img/home-featured-image.svg); 
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+    z-index: -1;
+    @include breakpoint(large){
+      opacity: 1;
+    }
+  }
 }
 
 .featured-on{
@@ -181,6 +195,18 @@ UTILITY
   border-radius: 50px;
 }
 
+.bg-white-transparent{
+  background: rgba(255,255,255,.75);
+  position: absolute;
+  top: 0;
+  bottom:0;
+  right:0;
+  left:0;
+  z-index:0;
+  @include breakpoint(large){
+    background: transparent;
+  }
+}
 
 
 /*********************

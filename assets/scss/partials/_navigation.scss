@@ -23,8 +23,12 @@ nav{
                     color: $blue;
                     position: relative;
                     padding: 0;
-                    letter-spacing: .05em;                  
+                    letter-spacing: .05em;
+                    font-size: .9em;                  
                     @include transition($transition);
+                    @include breakpoint(large){
+                        font-size: 1em;
+                    }
                     &:after {
                         content: '';
                         display: block;

@@ -11479,11 +11479,24 @@ a {
 SECTION 1
 *********************/
 .main-bg-svg {
-  background-image: url(../img/home-featured-image.svg);
-  background-size: contain;
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-color: #ffffff; }
+  position: relative; }
+  .main-bg-svg:after {
+    content: "";
+    background-image: url(../img/home-featured-image.svg);
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+    z-index: -1; }
+    @media print, screen and (min-width: 64em) {
+      .main-bg-svg:after {
+        opacity: 1; } }
 
 .featured-on {
   margin-top: 2em; }
@@ -11629,6 +11642,18 @@ UTILITY
 .rounded {
   border-radius: 50px; }
 
+.bg-white-transparent {
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0; }
+  @media print, screen and (min-width: 64em) {
+    .bg-white-transparent {
+      background: transparent; } }
+
 /*********************
 BOX WAVE
 *********************/
@@ -11765,9 +11790,13 @@ nav.main-menu {
       position: relative;
       padding: 0;
       letter-spacing: .05em;
+      font-size: .9em;
       -webkit-transition: all 0.3s ease-in-out;
       -kthtml-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
+      @media print, screen and (min-width: 64em) {
+        nav.main-menu .menu li a {
+          font-size: 1em; } }
       nav.main-menu .menu li a:after {
         content: '';
         display: block;
@@ -12046,6 +12075,12 @@ HEADER
     margin-left: 10px; }
   .top-bar ul {
     background: #ffffff; }
+
+.menu-container {
+  display: none; }
+  @media print, screen and (min-width: 64em) {
+    .menu-container {
+      display: block; } }
 
 .menu-start {
   float: right; }
