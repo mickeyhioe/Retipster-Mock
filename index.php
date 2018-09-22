@@ -43,15 +43,11 @@
                 <div>
                   <!-- Menu Search -->
                   <div class="menu-search">
-                    <!-- Search Form -->
-                    <form action="#" role="search" method="get" id="searchform" class="search-form form hide">
-                      <input type="search" name="search"><button type="submit" class="search-button"></button>
-                    </form>
-                    <!-- /Search Form -->
 
+                    
                     <!-- Search Button -->
                     <div class="menu-search-icon">
-                      <a href="#" class="search-icon">
+                      <a href="#" class="search-icon" id="search-icon">
                         <img src="assets/img/search.svg" alt="Search" class="icon-search">
                         <img src="assets/img/close.svg" alt="Close" class="icon-close hide">
                       </a>
@@ -64,6 +60,12 @@
                     </div>
                     <!-- /Start Here -->
 
+                    <!-- Mobile Menu -->
+                    <div class="menu-button" aria-hidden="true">
+                      <a href="#" id="nav-toggle"><span></span><span></span><span></span>MENU</a>
+                    </div>
+                    <!-- Mobile Menu -->
+
                   </div>
                   <!-- /Menu Search -->
                 </div>
@@ -75,6 +77,39 @@
       </div>
     </header>
     <!-- /Header -->
+
+    <!-- Mobile Menu -->			
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <nav class="overlay-menu" role="navigation">
+        <ul class="menu">
+          <li class="active"><a href="#">Articles</a></li>
+          <li><a href="#">Podcast</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /Mobile Menu -->
+
+    <!-- Search Form -->
+    <div class="mobile-menu" id="search-menu" aria-hidden="true">
+      <form action="#" role="search" method="get" id="searchform" class="search-form form">
+        <div class="grid-container section-padding">
+          <div class="grid-x  grid-padding-x  grid-padding-y align-middle align-center text-center">
+            <div class="cell large-9">
+              <input type="search" name="search" class="input rounded large" placeholder="Search">
+            </div>
+            <div class="cell large-3">
+              <button type="submit" class="search rounded large button full-width">SEARCH</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- /Search Form -->
+
 
     <!-- Section 1: Real World Guidance -->
     <section id="section-1" class="section-padding section-padding-top-large full-height main-bg-svg">

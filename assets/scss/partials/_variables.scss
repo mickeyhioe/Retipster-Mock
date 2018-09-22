@@ -31,9 +31,11 @@ $gutter: 4%;
 @include fontface('aktivGrotesk Bold', '../fonts/aktivGrotesk', 'AktivGrotesk-Bold');
 @include fontface('aktivGrotesk Light', '../fonts/aktivGrotesk', 'AktivGrotesk-Light');
 @include fontface('Proxima Nova Extra Bold', '../fonts/proximaNova', 'ProximaNova-Extrabld');
+@include fontface('Proxima Nova Bold', '../fonts/proximaNova', 'ProximaNova-Bold');
 
 $activgrotesk_light : "aktivGrotesk Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-$activgrotesk_bold  : "aktivGrotesk Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+$activgrotesk_bold  : "aktivGrotesk Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$proximanova_bold   : "Proxima Nova Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $proximanova_xbold  : "Proxima Nova Extra Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 $transition: all 0.3s ease-in-out; 

@@ -347,3 +347,22 @@ $transition: all 0.3s ease-in-out;
   background-size: $width $width;
   background-repeat: repeat-x, repeat-x, repeat-x, repeat-x, repeat-y, repeat-y, repeat-y, repeat-y;
 }
+
+@mixin rotate( $degrees ) {
+  -webkit-transform: rotate(#{$degrees}deg);
+		 -moz-transform: rotate(#{$degrees}deg);
+		  -ms-transform: rotate(#{$degrees}deg);
+			 -o-transform: rotate(#{$degrees}deg);
+					transform: rotate(#{$degrees}deg);
+
+  filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+  zoom: 1;
+}
+
+@mixin transform-origin( $position ) {
+	-webkit-transform-origin: $position;
+		 -moz-transform-origin: $position;
+			 -o-transform-origin: $position;
+				  transform-origin: $position;
+}

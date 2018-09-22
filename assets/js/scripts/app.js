@@ -73,4 +73,18 @@ $(document).ready(function() {
         }
     }
 
+    // Mobile Menu
+	$('#nav-toggle').click(function() {
+		$(this).toggleClass('active');
+		$(this).parent().toggleClass('open');
+		$('#mobile-menu').toggleClass('open');
+    });
+    
+    // Mobile Menu
+	$('#search-icon').click(function() {
+		$(this).toggleClass('active');
+		$(this).parent().toggleClass('open');
+		$('#search-menu').toggleClass('open');
+	});
+
 });
