@@ -1,0 +1,57 @@
+nav{
+    &.main-menu{
+        .menu{
+            li{
+                padding: 10px;
+                a{
+                    color: $blue;
+                    position: relative;
+                    padding: 0;
+                    letter-spacing: .05em;                  
+                    @include transition($transition);
+                    &:after {
+                        content: '';
+                        display: block;
+                        background-color: $blue;
+                        margin-top: 5px;
+                        height: 2px;
+                        @include transform(scale(0));                        
+                        @include transition($transition);
+                    }
+                      
+                    &:hover{
+                        color: $medium-blue;
+                        &:after {
+                            @include transform(scale(1));
+                        }
+                    }
+                        
+                }
+            }
+        }
+
+    }
+    &.sort-articles-menu{
+        .menu{
+            padding: 10px;
+            li{
+                border-left: 1px solid $light-gray;
+                &:first-child{
+                    border-left: none;
+                }
+                &.active{
+                    a{
+                        font-family: $activgrotesk_bold;
+                        font-weight: 600;
+                        background: transparent;
+                        color: $blue;
+                    }
+                }
+                a{
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,114 @@
+/************************************************
+
+Typography
+
+*************************************************/
+
+
+
+body {
+    font-family: $activgrotesk_light;
+    font-weight: 300;
+    color: $gray;
+}
+
+p{
+  font-size: 1.1em;
+}
+  
+h1,h2,h3,
+.h1, .h2, .h3 {
+    font-family: $proximanova_xbold!important;
+    font-weight: 900;
+    line-height: 1.2;
+}
+  
+h4, h5, h6, b, strong,
+.h4, .h5, .h6{
+    font-family: $activgrotesk_bold!important;
+    font-weight: 600;
+}
+  
+h1 {
+    font-size: 2em; 
+}
+
+h2 {
+    font-size: 1.85em;
+}
+
+h3 {
+    font-size: 1.65em;
+}
+
+h4 {
+    font-size: 1.45em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1.15em;
+}
+
+a{
+  color: $blue;
+  &:hover{
+    color: $medium-blue;
+    transition: .3s linear all;
+  }
+}
+  
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 2.5em;
+    }
+  
+    h2 {
+      font-size: 2.15em;
+    }
+  
+    h3 {
+      font-size: 1.85em;
+    }
+  
+    h4 {
+      font-size: 1.65em;
+    }
+  
+    h5 {
+      font-size: 1.45em;
+    }
+  
+    h6 {
+      font-size: 1.25em;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    h1 {
+      font-size: 3em;
+    }
+  
+    h2 {
+      font-size: 2.5em;
+    }
+  
+    h3 {
+      font-size: 2em;
+    }
+  
+    h4 {
+      font-size: 1.75em;
+    }
+  
+    h5 {
+      font-size: 1.5em;
+    }
+  
+    h6 {
+      font-size: 1.35em;
+    }
+  }

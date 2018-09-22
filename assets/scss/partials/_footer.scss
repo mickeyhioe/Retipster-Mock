@@ -1,0 +1,21 @@
+/*********************
+FOOTER
+*********************/
+footer{
+  .footer-bottom{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+.pixel-dreams{
+  text-align: right;
+  font-weight: bold;
+  color: $blue;
+  vertical-align: middle;
+  line-height: 32px;
+  img{
+    width: 25px;
+    height: auto;
+    margin-left: 10px;
+  }
+}

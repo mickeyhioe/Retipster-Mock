@@ -1,0 +1,73 @@
+.article-grid{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    &-item{
+        &-inner{
+            background: $white;
+            position: relative;
+            height: 480px;
+            &.big{
+                .img{
+                    height: 250px;
+                }
+                .content{
+                    h3{
+                        font-size: 1.5em;
+                    }
+                }
+            }
+            &:hover{
+                @extend .box-shadow-hover;
+            }
+            .img{
+                display: block;
+                height: 200px;
+                position: relative;
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .content{
+                color: $medium-gray;
+                padding: 30px;
+                position: relative;
+                .cat-icon{
+                    width: 50px;
+                    height: 50px;
+                    background-image: url(../img/icon-house.svg);
+                    background-size: 75%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-color: $light-green;
+                    border: 5px solid $white;
+                    position: absolute;
+                    top: -25px;
+                    left: 30px;
+                    -webkit-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    transition: all .3s ease;
+                    border-radius: 50%;
+                }
+                .category{
+                    font-size: .9em;
+                    margin: 10px 0;
+                }
+                h3{
+                    font-size: 1.3125em;
+                    line-height: 1.1;
+                    margin-bottom: 2em;
+                }
+            }
+
+            .user {
+                color: $medium-gray;
+                font-size: .8em;
+                position: absolute;
+                left: 30px;
+                bottom: 20px;
+                padding-bottom: 3px;
+            }
+        }
+    }
+}

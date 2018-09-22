@@ -1,0 +1,43 @@
+/*********************
+HELP CATEGORY
+*********************/ 
+.help-category{
+  padding-top: 40px;
+  &-item{
+    background: $white;
+    display: block;    
+    position: relative;
+    margin-bottom: 40px!important;
+    &:hover{
+      @extend .box-shadow-hover;
+      
+    }
+  }
+  &-icon{
+    position: relative;
+    height: 40px;
+    span{
+      width: 90px;
+      height: 90px;
+      border: 10px solid $white;
+      border-radius: 100%;
+      background-color: $light-green;
+      background-size: 60%;
+      background-position: center center;
+      position: absolute;
+      background-repeat: no-repeat;
+      left: 50%;
+      top: -35px;
+      margin-left: -45px;
+      display: block;
+    }
+  }
+  &-content{
+    text-align: center;
+    h3{
+      font-size: 1.8em;
+      margin: 30px 10px 30px;
+      color: $blue!important;
+    }
+  }
+}

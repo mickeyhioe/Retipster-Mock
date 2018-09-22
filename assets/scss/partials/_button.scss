@@ -1,0 +1,38 @@
+.button{
+    font-family: $activgrotesk_bold;
+    background: $medium-blue;
+    border: 2px solid $medium-blue;
+    &:focus{
+        background: $medium-blue;
+        color: $white;
+    }
+    &:hover,
+    &:active{
+        background: $white;
+        color: $medium-blue;
+    }
+    &.large{
+        font-size: 1em;
+        padding: 1em 3em;
+    }
+    &.full-width{
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+.input{
+    box-shadow:none;
+    &.rounded{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &.large{
+        height: 52px;
+        width: calc(100% - 10px);
+    }
+}
+
+.rounded{
+    border-radius: 50px;
+}

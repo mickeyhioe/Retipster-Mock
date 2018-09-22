@@ -1,0 +1,74 @@
+/*********************
+TOOLBOX
+*********************/ 
+.toolbox{
+  padding-top: 40px;
+  &-item{
+    background: $white;
+    border: 1px solid $blue;
+    display: block;    
+    position: relative;
+    padding-bottom: 40px;
+    &:after{
+      content:'';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      height: 40px;
+      width: 100%;
+      @extend .bg-wave;
+      border-top: 1px solid $blue;
+    }
+    &:hover{
+      @extend .box-shadow-hover;
+      
+    }
+  }
+  &-icon{
+    position: relative;
+    height: 40px;
+    border-bottom: 1px solid $blue;
+    @extend .bg-wave;
+    span{
+      width: 80px;
+      height: 80px;
+      border: 1px solid $blue;
+      border-radius: 100%;
+      background-color: $white;
+      background-size: 60%;
+      background-position: center center;
+      position: absolute;
+      background-repeat: no-repeat;
+      left: 50%;
+      top: -25px;
+      margin-left: -40px;
+      display: block;
+    }
+  }
+  &-content{
+    padding: 20px 20px 40px;
+    text-align: center;
+    h3{
+      margin: 20px auto;
+      padding-bottom: 20px;
+      position: relative;
+      color: $blue!important;
+      &:after{
+        content:'';
+        display: block;
+        position: absolute;
+        background-color: $light-gray;
+        height: 1px;
+        width: 40px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -20px;
+      }
+    }
+    p{
+      font-size: 1.125em;
+      margin:0;
+      color: $blue!important;
+    }
+  }
+}

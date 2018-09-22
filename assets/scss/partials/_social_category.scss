@@ -1,0 +1,49 @@
+/*********************
+SOCIAL CATEGORY
+*********************/ 
+.social-category{
+  padding-top: 40px;
+  &-item{
+    background: $white;
+    display: block;    
+    position: relative;
+    margin-bottom: 40px!important;
+    &:hover{
+      .social-category-icon{
+        span{
+          transition: all 0.3s ease;
+          background-size: 70%;
+        }
+      }
+    }
+
+  }
+  &-icon{
+    position: relative;
+    height: 40px;
+    span{
+      width: 90px;
+      height: 90px;
+      background-size: 60%;
+      background-position: center center;
+      position: absolute;
+      background-repeat: no-repeat;
+      left: 50%;
+      top: -35px;
+      margin-left: -45px;
+      display: block;
+    }
+  }
+  &-content{
+    text-align: center;
+    h3{
+      font-size: 1.8em;
+      margin: 10px 0 0;
+      color: $blue!important;
+    }
+    p{
+      color: $gray!important;
+      font-size: 1.2em;
+    }
+  }
+}

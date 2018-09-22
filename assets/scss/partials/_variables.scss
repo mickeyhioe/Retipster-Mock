@@ -1,0 +1,65 @@
+/* ----------------------------------------------------------------------------
+ * Variables
+ * ------------------------------------------------------------------------- */
+$white		: #ffffff;
+$black		: #000000;
+$light-gray	: #dfe4e7;
+$medium-gray: #82939f;
+$gray		: #5c6e7b;
+$light-green: #b7e1d8;
+$green		: #02b491;
+$light-blue : #d9e9f5; 
+$medium-blue: #3d92cc;
+$blue       : #2c4c61; 
+$red        : #cc0000;
+$yellow     : #ffcc00;
+
+
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+$xsmall: 320px;
+$small: 480px;
+$medium: 768px;
+$large: 1024px;
+$xlarge: 1400px;
+
+$width: 96%;
+$gutter: 4%;
+
+// Fonts
+@include fontface('aktivGrotesk Bold', '../fonts/aktivGrotesk', 'AktivGrotesk-Bold');
+@include fontface('aktivGrotesk Light', '../fonts/aktivGrotesk', 'AktivGrotesk-Light');
+@include fontface('Proxima Nova Extra Bold', '../fonts/proximaNova', 'ProximaNova-Extrabld');
+
+$activgrotesk_light : "aktivGrotesk Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+$activgrotesk_bold  : "aktivGrotesk Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+$proximanova_xbold  : "Proxima Nova Extra Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+$transition: all 0.3s ease-in-out; 
+
+
+// Color
+$colors: (
+  black: $black,
+  white: $white,
+  blue: $blue,
+  green: $green,
+  light-green: $light-green,
+  light-blue: $light-blue,
+  medium-blue: $medium-blue,
+  light-gray: $light-gray,
+  medium-gray: $medium-gray,
+
+);
+
+@mixin gen-props($prefix, $property) {
+    @each $color-name, $color in $colors {
+      .#{$prefix}-#{$color-name} {
+        #{$property}: $color
+      }
+    }
+  }
+  
+  @include gen-props('text', 'color');
+  @include gen-props('bg', 'background');
