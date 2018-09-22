@@ -19,20 +19,13 @@
         width: 100%;
         padding: 1em;
     }
-}
-
-.input{
-    box-shadow:none;
-    &.rounded{
-        padding-left: 20px;
-        padding-right: 20px;
+    &.bg-green{
+        background: $green;
+        color: $white;
+        border: none;
+      &:hover{
+        background: darken($green, 10%);
+        color: $white;
+      }
     }
-    &.large{
-        height: 52px;
-        width: calc(100% - 10px);
-    }
-}
-
-.rounded{
-    border-radius: 50px;
 }

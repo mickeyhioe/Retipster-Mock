@@ -1,0 +1,14 @@
+.input{
+    box-shadow:none;
+    &.rounded{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &.large{
+        height: 52px;
+        width: 100%;       
+        @include breakpoint(medium) {
+            width: calc(100% - 10px);
+        }
+    }
+}

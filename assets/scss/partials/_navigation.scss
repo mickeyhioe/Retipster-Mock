@@ -1,8 +1,24 @@
 nav{
     &.main-menu{
+        margin: 0 15px;
         .menu{
             li{
-                padding: 10px;
+                padding: 15px;
+                &.active{
+                    a{
+                        font-family: $activgrotesk_bold;
+                        background: transparent;
+                        color: $blue;
+                        &:after {
+                            content: '';
+                            display: block;
+                            background-color: $blue;
+                            margin-top: 5px;
+                            height: 2px;
+                            @include transform(scale(1));
+                        }
+                    }
+                }
                 a{
                     color: $blue;
                     position: relative;
@@ -42,7 +58,6 @@ nav{
                 &.active{
                     a{
                         font-family: $activgrotesk_bold;
-                        font-weight: 600;
                         background: transparent;
                         color: $blue;
                     }

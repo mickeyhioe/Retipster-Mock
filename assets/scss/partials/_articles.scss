@@ -48,6 +48,32 @@
                     -o-transition: all .3s ease;
                     transition: all .3s ease;
                     border-radius: 50%;
+                    &.icon{
+                        &-megaphone{
+                            background-image: url(../img/icon-megaphone.svg);
+                        }
+                        &-map{
+                            background-image: url(../img/icon-map.svg);
+                        }
+                        &-house{
+                            background-image: url(../img/icon-house.svg);
+                        }
+                        &-apartment{
+                            background-image: url(../img/icon-apartment.svg);
+                        }
+                        &-sign{
+                            background-image: url(../img/icon-sign.svg);
+                        }
+                        &-piggybank{
+                            background-image: url(../img/icon-piggybank.svg);
+                        }
+                        &-smiley{
+                            background-image: url(../img/icon-smiley.svg);
+                        }
+                        &-cellphone{
+                            background-image: url(../img/icon-cellphone.svg);
+                        }
+                    }
                 }
                 .category{
                     font-size: .9em;

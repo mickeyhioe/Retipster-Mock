@@ -14,23 +14,48 @@ HEADER
 
 .top-bar{
   background: $white;
-  box-shadow: 0 8px 0 rgba(0,0,0,.15);
+  box-shadow: 0 5px 10px rgba(0,0,0,.05);
+  padding: 0;
+  .logo{
+    margin-left: 10px;
+  }
   ul{
     background: $white;
   }
-
 }
 
-.menu-search{
-  img{
-    height: 20px;
-    width: auto;
+.menu-start{
+  float: right;
+  .button{    
+    margin-bottom: 0;
+    height:55px;
+    line-height: 55px;
+    padding: 0 3em;
+    font-size: 1em;
+  }
+}
+
+.menu-search-icon{
+  float: left;
+  .search-icon{
+    display: inline-block;
+    padding: 1em 2em;
+    height: 100%;
+    border-left: 1px solid $light-gray;
+    @include transition($transition);
+    &:hover{
+      background: $light-gray;
+    }
+    img{
+      height: 20px;
+      width: auto;
+    }
   }
 }
 
 .logo{
   img{
-    width: 150px;
+    width: 120px;
     height: auto;
   }
 }

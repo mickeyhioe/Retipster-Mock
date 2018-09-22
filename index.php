@@ -18,21 +18,29 @@
                 </div>
                 <!-- /Logo -->
               </div>
-              <div class="top-bar-right">
-                <!-- Menu Container-->
+
+               <!-- Menu Container-->
+              <div class="top-bar-right">               
                 <div class="menu-container">
                   <!-- Main Menu -->
                   <nav class="main-menu">
                     <ul class="menu">
-                      <li><a href="#">Articles</a></li>
+                      <li class="active"><a href="#">Articles</a></li>
                       <li><a href="#">Podcast</a></li>
                       <li><a href="#">Resources</a></li>
                       <li><a href="#">Store</a></li>
                       <li><a href="#">About</a></li>
-                      <li><a href="#">Contact</a></li>              
+                      <li><a href="#">Contact</a></li>
                     </ul>
                   </nav>
                   <!-- /Main Menu -->
+                </div>
+              </div>
+              <!-- /Menu Container-->
+
+
+              <div class="top-bar-right">
+                <div>
                   <!-- Menu Search -->
                   <div class="menu-search">
                     <!-- Search Form -->
@@ -40,21 +48,26 @@
                       <input type="search" name="search"><button type="submit" class="search-button"></button>
                     </form>
                     <!-- /Search Form -->
+
                     <!-- Search Button -->
-                    <a href="#" class="search-icon hide">
-                      <img src="assets/img/search.svg" alt="Search" class="icon-search">
-                      <img src="assets/img/close.svg" alt="Close" class="icon-close">
-                    </a>
+                    <div class="menu-search-icon">
+                      <a href="#" class="search-icon">
+                        <img src="assets/img/search.svg" alt="Search" class="icon-search">
+                        <img src="assets/img/close.svg" alt="Close" class="icon-close hide">
+                      </a>
+                    </div>
                     <!-- /Search Button -->
+
                     <!-- Start Here -->
-                    <div class="menu-start hide">
+                    <div class="menu-start">
                       <a href="#" class="button bg-green">Start here</a>
                     </div>
                     <!-- /Start Here -->
+
                   </div>
                   <!-- /Menu Search -->
                 </div>
-                <!-- /Menu Container-->
+                
               </div>
             </div>
           </div>
@@ -252,7 +265,7 @@
         <div class="article-grid grid-x grid-margin-x grid-margin-y">
 
           <!-- Item -->
-          <div class="article-grid-item cell large-6 medium-6">
+          <div class="article-grid-item cell large-6 medium-12">
             <div class="article-grid-item-inner big">
               <a href="#" class="img" style="background-image: url(assets/img/articles.jpg);">
               </a>
@@ -268,15 +281,54 @@
           </div>
           <!-- /Item -->
 
-          <?php for ($i=1; $i<13; $i++):?>
+          <?php
+            $cat_icon = array(
+              array(
+                'icon'   => "icon-megaphone",
+                'title'  => "Just for Fun",
+              ),
+              array(
+                'icon'   => "icon-map",
+                'title'  => "Land investing"
+              ),
+              array(
+                'icon'   => "icon-house",
+                'title'  => "Selling property"
+              ),
+              array(
+                'icon'   => "icon-apartment",
+                'title'  => "Landlording"
+              ),
+              array(
+                'icon'   => "icon-sign",
+                'title'  => "Finding deals"
+              ),
+              array(
+                'icon'   => "icon-piggybank",
+                'title'  => "Saving money"
+              ),
+              array(
+                'icon'   => "icon-smiley",
+                'title'  => "Getting more done"
+              ),
+              array(
+                'icon'   => "icon-cellphone",
+                'title'  => "Technology"
+              )
+            );
+
+            foreach(array_keys($cat_icon) as $num):
+              $title = $cat_icon[$num]['title'];
+              $icon = $cat_icon[$num]['icon'];
+          ?>
           <!-- Item -->
           <div class="article-grid-item cell large-3 medium-6">
             <div class="article-grid-item-inner">
               <a href="#" class="img" style="background-image: url(assets/img/articles.jpg);">
               </a>
               <div class="content">
-                <span class="cat-icon" style="background-image:url(assets/img/icon-sign.svg);"></span>
-                <div class="category">Just For Fun</div>
+                <span class="cat-icon <?php echo $icon;?>"></span>
+                <div class="category"><?php echo $title;?></div>
                 <div class="title">
                   <h3><a href="#">20 Life-Changing Books on Business, Real Estate and Personal Success</a></h3>
                 </div>
@@ -286,7 +338,7 @@
             </div>
           </div>
           <!-- /Item -->
-            <?php endfor; ?>
+            <?php endforeach; ?>
 
         </div>
         <!-- /Articles -->

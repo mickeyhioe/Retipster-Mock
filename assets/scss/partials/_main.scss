@@ -177,11 +177,9 @@ UTILITY
   transform: scale(1.01);
 }
 
-
-
-
-
-
+.rounded{
+  border-radius: 50px;
+}
 
 
 
@@ -231,14 +229,19 @@ BOOK COVER
 .book-cover{
   background-size: cover;
   background-image: url(../img/investor-hacks.svg);
-  height: 400px;
+  height: 250px;
   padding: 20px;
   position: relative;
+  @include breakpoint(medium) {
+    height: 400px;
+  }
   &.building{
     background-image: url(../img/building.svg);
   }
   &-title{
-    margin-top: 40px;
+    @include breakpoint(medium) {
+      margin-top: 20px;
+    }
   }
   &-author{
     position: absolute;
