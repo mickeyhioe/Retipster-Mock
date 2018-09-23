@@ -18,7 +18,7 @@
             </div>
             <div class="cell medium-8">
               <nav class="nav-menu">
-                <ul class="menu">
+                <ul class="menu align-center">
                   <li><a href="#">Archives</a></li>
                   <li><a href="#">Disclosure &amp; Privacy Policy</a></li>
                   <li><a href="#">Earnings Disclaimer</a></li>
@@ -43,8 +43,6 @@
     
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/owlcarousel/owl.carousel.min.js"></script>
-    <script src="assets/js/vendor/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/vendor/isotope/isotope.pkgd.min.js"></script>    
     <script src="assets/js/vendor/what-input.js"></script>
     <script src="assets/js/vendor/foundation.js"></script>
     <script src="assets/js/scripts/app.js"></script>

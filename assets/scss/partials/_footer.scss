@@ -6,23 +6,44 @@ footer{
     margin-top: 2em;
     margin-bottom: 2em;
   }
+  .logo{
+    text-align: center;
+    margin-bottom: 10px;
+    @include breakpoint(medium){
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+  .menu{
+    a{
+      font-size: .8em;
+      @include breakpoint(medium){
+        font-size: 1em;
+      }
+    }
+  }
 }
+
 .pixel-dreams{
-  text-align: right;
+  text-align: center;
   font-weight: bold;
-  color: $blue;
+  color: $medium-gray;
   vertical-align: middle;
   line-height: 32px;
+  font-size: .8em;
+  @include breakpoint(medium){
+    text-align: right;
+  }
   img{
-    width: 25px;
+    width: 20px;
     height: auto;
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }
 
 .scroll-top {
   right: 15px;
-  bottom: 50px;
+  bottom: 100px;
   z-index: 10;
   position: fixed;
   display: inline-block;

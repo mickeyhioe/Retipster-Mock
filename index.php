@@ -47,9 +47,8 @@
                     
                     <!-- Search Button -->
                     <div class="menu-search-icon">
-                      <a href="#" class="search-icon" id="search-icon">
-                        <img src="assets/img/search.svg" alt="Search" class="icon-search">
-                        <img src="assets/img/close.svg" alt="Close" class="icon-close hide">
+                      <a href="#" class="search-icon" id="open-search">
+                        <img src="assets/img/search.svg" alt="Search" class="icon-search">                        
                       </a>
                     </div>
                     <!-- /Search Button -->
@@ -62,7 +61,7 @@
 
                     <!-- Mobile Menu -->
                     <div class="menu-button" aria-hidden="true">
-                      <a href="#" id="nav-toggle"><span></span><span></span><span></span>MENU</a>
+                      <a href="#" id="open-menu"><span></span><span></span><span></span>MENU</a>
                     </div>
                     <!-- Mobile Menu -->
 
@@ -80,6 +79,9 @@
 
     <!-- Mobile Menu -->			
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="#" id="close-menu" class="icon-close">
+        <img src="assets/img/close.svg" alt="Close">
+      </a>
       <nav class="overlay-menu" role="navigation">
         <ul class="menu">
           <li class="active"><a href="#">Articles</a></li>
@@ -95,13 +97,20 @@
 
     <!-- Search Form -->
     <div class="mobile-menu" id="search-menu" aria-hidden="true">
+      <a href="#" id="close-search" class="icon-close">
+        <img src="assets/img/close.svg" alt="Close">
+      </a>
       <form action="#" role="search" method="get" id="searchform" class="search-form form">
         <div class="grid-container section-padding">
-          <div class="grid-x  grid-padding-x  grid-padding-y align-middle align-center text-center">
-            <div class="cell large-9">
+          <div class="grid-x grid-padding-y align-center-middle text-center" style="height: 100fv;">
+            <div class="cell large-12">
+              <h1 class="text-blue">Search</h1>
+            </div>
+
+            <div class="cell medium-6">
               <input type="search" name="search" class="input rounded large" placeholder="Search">
             </div>
-            <div class="cell large-3">
+            <div class="cell medium-3">
               <button type="submit" class="search rounded large button full-width">SEARCH</button>
             </div>
           </div>
@@ -275,11 +284,11 @@
             <div class="grid-container">
               <div class="grid-x grid-padding-x box-wave align-middle">
                 <div class="large-6 cell">
-                  <h2 class="text-blue h3 margin-0">Articles from our blog</h2>
+                  <h2 class="text-blue h3 title-article">Articles from our blog</h2>
                 </div>
                 <div class="large-6 cell">
                   <nav class="sort-articles-menu">
-                    <ul class="menu align-right">
+                    <ul class="menu">
                       <li class="active"><a href="#">Recent</a></li>
                       <li><a href="#">Featured</a></li>
                       <li><a href="#">Popular</a></li>

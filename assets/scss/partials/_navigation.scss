@@ -57,6 +57,12 @@ nav{
     &.sort-articles-menu{
         .menu{
             padding: 10px;
+            -ms-flex-pack: center;
+            justify-content: center;
+            @include breakpoint(large){
+                -ms-flex-pack: end;
+                justify-content: flex-end;
+            }
             li{
                 border-left: 1px solid $light-gray;
                 &:first-child{
@@ -82,7 +88,7 @@ nav{
 BURGER MENU
 *********************/
 
-#nav-toggle {
+#open-menu {
 	display: block;
 	width: 35px;
     height: 35px;
@@ -151,10 +157,10 @@ MOBILE MENU
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
-	z-index: 9998;
+	z-index: 99999;
   
     &.open {
-        opacity: .9;
+        opacity: .95;
         visibility: visible;
         height: 100%;
     
@@ -253,4 +259,14 @@ MOBILE MENU
     opacity: 1;
     left: 0;
   }
+}
+
+.icon-close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    img{
+        width: 25px;
+        height: auto;
+    }
 }

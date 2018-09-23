@@ -74,17 +74,23 @@ $(document).ready(function() {
     }
 
     // Mobile Menu
-	$('#nav-toggle').click(function() {
-		$(this).toggleClass('active');
-		$(this).parent().toggleClass('open');
+	$('#open-menu').click(function() {
+		//$(this).toggleClass('active');
+		//$(this).parent().toggleClass('open');
 		$('#mobile-menu').toggleClass('open');
     });
-    
-    // Mobile Menu
-	$('#search-icon').click(function() {
-		$(this).toggleClass('active');
-		$(this).parent().toggleClass('open');
-		$('#search-menu').toggleClass('open');
-	});
 
+    $('#close-menu').click(function() {
+		$('#mobile-menu').toggleClass('open');
+    });
+
+    // Search Menu
+	$('#open-search').click(function() {
+		$('#search-menu').toggleClass('open');
+    });
+
+    $('#close-search').click(function() {
+		$('#search-menu').toggleClass('open');
+    });
+    
 });

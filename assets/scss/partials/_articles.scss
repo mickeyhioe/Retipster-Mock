@@ -97,3 +97,12 @@
         }
     }
 }
+
+h2.title-article{
+    text-align: center;
+    margin: 10px;
+    @include breakpoint(large){
+        text-align: left;
+        margin:0;
+    }
+}

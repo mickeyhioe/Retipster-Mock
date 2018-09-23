@@ -8,6 +8,36 @@ SOCIAL CATEGORY
     display: block;    
     position: relative;
     margin-bottom: 40px!important;
+    &:nth-of-type(odd){
+      .social-category-content{
+        border-right: 1px solid $light-gray;
+      }
+    }
+    @include breakpoint(medium){
+      .social-category-content{
+        border-right: 1px solid $light-gray;
+      }
+      &:nth-of-type(3n+3){
+        .social-category-content{
+          border-right: none;
+        }
+      }
+    }
+    @include breakpoint(large){
+      .social-category-content{
+        border-right: 1px solid $light-gray;
+      }
+      &:nth-of-type(3n+3){
+        .social-category-content{
+          border-right: 1px solid $light-gray;
+        }
+      }
+      &:nth-of-type(4n){
+        .social-category-content{
+          border-right: none;
+        }
+      }
+    }
     &:hover{
       .social-category-icon{
         span{
@@ -16,7 +46,6 @@ SOCIAL CATEGORY
         }
       }
     }
-
   }
   &-icon{
     position: relative;
