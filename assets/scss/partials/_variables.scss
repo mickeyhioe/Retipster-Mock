@@ -1,18 +1,18 @@
 /* ----------------------------------------------------------------------------
  * Variables
  * ------------------------------------------------------------------------- */
-$white		  : #ffffff;
-$black		  : #000000;
-$light-gray	: #dfe4e7;
-$medium-gray: #82939f;
-$gray		    : #5c6e7b;
-$light-green: #b7e1d8;
-$green		  : #02b491;
-$light-blue : #d9e9f5; 
-$medium-blue: #3d92cc;
-$blue       : #2c4c61; 
-$red        : #cc0000;
-$yellow     : #ffcc00;
+$white		  : rgba(255, 255, 255, 1);
+$black		  : rgba(0, 0, 0, 1);
+$light-gray	: rgba(223, 228, 231, 1);
+$medium-gray: rgba(130, 147, 159, 1);
+$gray		    : rgba(92, 110, 123, 1);
+$light-green: rgba(183, 225, 216, 1);
+$green		  : rgba(2, 180, 145, 1);
+$light-blue : rgba(217, 233, 245, 1); 
+$medium-blue: rgba(61, 146, 204, 1);
+$blue       : rgba(44, 76, 97, 1); 
+$red        : rgba(204, 0, 0, 1);
+$yellow     : rgba(255, 204, 0, 1);
 
 
 $size__site-main: 100%;
