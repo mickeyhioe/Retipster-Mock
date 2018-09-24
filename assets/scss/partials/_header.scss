@@ -34,7 +34,10 @@ HEADER
     }
   }
   .logo{
-    margin-left: 20px;
+    margin-left: 10px;
+    @include breakpoint(medium){
+      margin-left: 20px;
+    }
   }
   ul{
     background: $white;
@@ -56,15 +59,20 @@ HEADER
 .menu-start{
   .button{    
     margin-bottom: 0;
-    height:55px;
-    line-height: 55px;
-    padding: 0 3em;
-    font-size: 1em;
+    padding: 0 1.8em;
+    font-size: .9em;
+    height:45px;
+    line-height: 45px;
+    @include breakpoint(medium){
+      font-size: 1em;
+      height:55px;
+      line-height: 55px;
+      padding: 0 3em;
+    }
   }
 }
 
 .menu-button{
-  margin: 10px;
   @include breakpoint(large){
     display: none;
   }
@@ -75,11 +83,17 @@ HEADER
 
 .menu-search-icon{
   .search-icon{
-    display: inline-block;
-    padding: 1em 2em;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
     border-left: 1px solid $light-gray;
     @include transition($transition);
+    @include breakpoint(medium){
+      height: 55px;
+      width: 55px;
+    }
     &:hover{
       background: $light-gray;
     }
@@ -92,7 +106,13 @@ HEADER
 
 .logo{
   img{
-    width: 120px;
+    width: 90px;
     height: auto;
+    @include breakpoint(small){
+      width: 100px;
+    }
+    @include breakpoint(medium){
+      width: 120px;
+    }
   }
 }

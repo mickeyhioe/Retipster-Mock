@@ -103,7 +103,7 @@
       <form action="#" role="search" method="get" id="searchform" class="search-form form">
         <div class="grid-container section-padding">
           <div class="grid-x grid-padding-y align-center-middle text-center" style="height: 100fv;">
-            <div class="cell large-12">
+            <div class="cell small-12">
               <h1 class="text-blue">Search</h1>
             </div>
 
@@ -120,32 +120,25 @@
     <!-- /Search Form -->
 
 
-    <!-- Section 1: Real World Guidance -->
-    <section id="section-1" class="section-padding section-padding-top-large full-height main-bg-svg">
-      
+    <!-- Section 1 -->
+    <section id="section-1" class="full-height main-bg-svg">      
 
       <div class="grid-container">
-        <div class="grid-x grid-padding-x">
-          <div class="large-6 large-offset-6 medium-10 medium-offset-1 cell">
+        <div class="grid-x grid-padding-x full-height align-center">
 
+          <div class="large-6 large-offset-6 medium-10 medium-offset-1 cell">
             <!-- Main -->
-            <div class="section-title">
+            <div class="section-title main">
               <h1 class="text-blue">Real-world guidance for real estate investing.</h1>
               <p>Are you motivated to create financial success from real estate, while helping others and making time for important things in life?</p>
               <p>You’ve come to the right place: gain knowledge that is simple to understand, practical guidance that is easy to apply, and overlooked strategies that are proven to bring results with minimal risks.</p>
             </div>
             <!-- /Main -->
-
-            <?php include('newsletter.php');?>
-            
+            <?php include('newsletter.php');?>            
           </div>
-        </div>
-      </div>
 
-      <!-- Featured On -->
-      <div class="grid-container">
-        <div class="grid-x align-center">
-          <div class="medium-10 small-11 cell">
+          <div class="medium-10 small-11 cell align-self-bottom">
+            <!-- Featured On -->
             <div class="featured-on">
               <h2 class="stars">Featured on</h2>
               <div id="brands-carousel" class="brands-carousel owl-carousel">
@@ -155,22 +148,23 @@
                   <div class="brands-item"><img src="assets/img/inman.svg" alt="Inman"></div>
               </div>
             </div>
+            <!-- /Featured On -->
           </div>
+
         </div>
       </div>
-      <!-- /Featured On -->
 
     </section>
     <!-- /Section 1 -->
 
     <!-- Section 2 -->
-    <section id="section-2" class="sawtooth-vertical bg-light-green section-padding">
+    <section id="section-2" class="sawtooth-vertical bg-medium-blue section-padding">
       <div class="grid-container">
         <div class="grid-x grid-padding-x">
-          <div class="large-12 cell">
+          <div class="small-12 cell">
             <div class="section-title text-center">
-              <h2 class="text-blue">Your success toolbox</h2>
-              <p class="text-blue">Practical & proven resources to achieve your financial & personal freedom through real estate</p>
+              <h2 class="text-white">Your success toolbox</h2>
+              <p class="text-white">Practical & proven resources to achieve your financial & personal freedom through real estate</p>
             </div>
           </div>
         </div>
@@ -280,11 +274,11 @@
        <!-- Articles Nav -->
       <div class="grid-container">       
         <div class="grid-x grid-padding-x grid-margin-y">
-          <div class="large-12 cell">
+          <div class="small-12 cell">
             <div class="grid-container">
               <div class="grid-x grid-padding-x box-wave align-middle">
                 <div class="large-6 cell">
-                  <h2 class="text-blue h3 title-article">Articles from our blog</h2>
+                  <h2 class="text-blue title-article">Articles from our blog</h2>
                 </div>
                 <div class="large-6 cell">
                   <nav class="sort-articles-menu">
@@ -308,23 +302,6 @@
       <div class="grid-container grid-container-padded">
         <!-- Articles -->
         <div class="article-grid grid-x grid-margin-x grid-margin-y">
-
-          <!-- Item -->
-          <div class="article-grid-item cell large-6 medium-12">
-            <div class="article-grid-item-inner big">
-              <a href="#" class="img" style="background-image: url(assets/img/articles.jpg);">
-              </a>
-              <div class="content">
-                <span class="cat-icon" style=" background-image:url(assets/img/icon-apartment.svg);"></span>
-                <div class="category">Just For Fun</div>
-                <div class="title">
-                  <h3><a href="#">20 Life-Changing Books on Business, Real Estate and Personal Success</a></h3>
-                </div>
-              </div>
-              <div class="user">By: Seth Williams • <span class="span-reading-time"> 16 </span> min read </div>
-            </div>
-          </div>
-          <!-- /Item -->
 
           <?php
             $cat_icon = array(
@@ -359,28 +336,47 @@
               array(
                 'icon'   => "icon-cellphone",
                 'title'  => "Technology"
+              ),
+              array(
+                'icon'   => "icon-piggybank",
+                'title'  => "Saving money"
+              ),
+              array(
+                'icon'   => "icon-smiley",
+                'title'  => "Getting more done"
+              ),
+              array(
+                'icon'   => "icon-cellphone",
+                'title'  => "Technology"
               )
             );
 
             foreach(array_keys($cat_icon) as $num):
               $title = $cat_icon[$num]['title'];
               $icon = $cat_icon[$num]['icon'];
+              if ($num == 0){
+                $cellsize = "large-6 ";
+                $imgsize = "big";
+              }else{
+                $cellsize = "large-3 medium-6 ";
+                $imgsize = "";
+              }
           ?>
           <!-- Item -->
-          <div class="article-grid-item cell large-3 medium-6">
-            <div class="article-grid-item-inner">
-              <a href="#" class="img" style="background-image: url(assets/img/articles.jpg);">
-              </a>
-              <div class="content">
+          <div class="article-grid-item cell <?php echo $cellsize;?>">
+            <div class="article-grid-item-inner <?php echo $imgsize;?>">
+              <a href="#" class="img" style="background-image: url(https://picsum.photos/1200/800?image=<?php echo rand(600, 1000)?>);">
                 <span class="cat-icon <?php echo $icon;?>"></span>
+              </a>
+              <div class="content">                
                 <div class="category"><?php echo $title;?></div>
                 <div class="title">
                   <h3><a href="#">20 Life-Changing Books on Business, Real Estate and Personal Success</a></h3>
                 </div>
+                <div class="user">By: Seth Williams • <span class="span-reading-time"> 16 </span> min read </div>
+                  <a href="#" class="article-link"></a>
+                </div>
               </div>
-              <div class="user">By: Seth Williams • <span class="span-reading-time"> 16 </span> min read </div>
-              <a href="#" class="article-link"></a>
-            </div>
           </div>
           <!-- /Item -->
             <?php endforeach; ?>
@@ -402,7 +398,7 @@
       <!-- Help Container -->
       <div class="grid-container">
         <div class="grid-x grid-padding-x">
-          <div class="large-12 cell">
+          <div class="small-12 cell">
             <div class="section-title title-wave text-center">
               <h2>Hi REtipster, I want help with</h2>
             </div>
@@ -413,7 +409,7 @@
 
       <!-- Help Category -->
       <div class="help-category grid-container grid-container-padded">
-        <div class="grid-x grid-margin-x grid-margin-y large-up-4 medium-up-2 small-up-1">
+        <div class="grid-x grid-margin-x grid-margin-y large-up-4 medium-up-3 small-up-2">
           <?php
             $help_category = array(
               array(
@@ -479,7 +475,7 @@
     <section id="section-5" class="section-padding">
       <div class="grid-container">
         <div class="grid-x">
-          <div class="large-12 cell">
+          <div class="small-12 cell">
 
             <div class="box-blue">
               <p class="text-center"><strong>Bonus:</strong> Your free copy of the <strong>INVESTOR HACKS</strong> e-book gives you instant access to the REtipster Toolbox, with even more resources to succeed.</p>
@@ -508,10 +504,10 @@
       <div class="grid-container">
 
         <div class="grid-x">
-          <div class="large-12 cell">
+          <div class="small-12 cell">
 
             <div class="grid-x box-white">
-              <div class="large-12 cell bg-wave align-center text-center">
+              <div class="small-12 cell bg-wave align-center text-center">
                 <h2 class="text-center text-blue title-bg-white">Join our growing community</h2>
               </div>              
             </div>

@@ -25,6 +25,7 @@ SECTION 1
 
 .featured-on{
   margin-top: 2em;
+  margin-bottom: 2em;
   h2{
     color: $medium-gray;
     font-size: 1.2em;
@@ -59,13 +60,23 @@ GENERAL STYLES
 SECTION PADDING
 *********************/ 
 .section-padding{
-  padding-top: 6em;
-  padding-bottom: 6em;
-  &-top{
+  padding-top: 3em;
+  padding-bottom: 3em;
+  @include breakpoint(medium){
     padding-top: 6em;
+    padding-bottom: 6em;
+  }
+  &-top{
+    padding-top: 3em;
     padding-bottom: 0;
+    @include breakpoint(medium){
+      padding-top: 6em;
+    }
     &-large{
-      padding-top: 10em;
+      padding-top: 6em;
+      @include breakpoint(medium){
+        padding-top: 10em;
+      }
     }
   }
 }
@@ -144,7 +155,8 @@ BRAND CAROUSEL
 UTILITY
 *********************/ 
 .full-height{
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 }
 
 .align-center {
@@ -168,17 +180,17 @@ UTILITY
 .padding-2{
   padding: 1.5em;
 }
+.margin-top-1{
+  margin-top: 1em;
+}
+.margin-top-2{
+  margin-top: 2em;
+}
 
 .padding-3{
   padding: 2em;
 }
 
-
-.bg-wave{
-  background-image: url(../img/waves_bottom.svg);
-  background-size: 100%;
-  background-repeat: repeat;
-}
 
 .box-shadow{
   box-shadow: 0 10px 15px rgba(0,0,0,0.25);
@@ -221,8 +233,12 @@ BOX WAVE
     height: 40px;
     width: 100%;
     border-top: 1px solid $blue;
-    @extend .bg-wave;
+    @include bg-wave();
   }
+}
+
+.bg-wave{
+  @include bg-wave();
 }
 
 /*********************
@@ -265,13 +281,21 @@ BOOK COVER
     background-image: url(../img/building.svg);
   }
   &-title{
+    text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+    width: 60%;
     @include breakpoint(medium) {
+      width: 100%;
       margin-top: 20px;
+      text-shadow: none;
     }
   }
   &-author{
     position: absolute;
     bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+    @include breakpoint(medium) {
+      text-shadow: none;
+    }
   }
 }
 
@@ -291,27 +315,42 @@ BOOK COVER
 
 .title-mail{
   margin-bottom: 20px;
+  text-align: center;
+  @include breakpoint(medium){
+    text-align: left;
+  }
+
   &:before{
     content:'';
-    display: inline-block;
+    display: block;
     background: url(../img/icon-mail.svg);
     background-repeat: no-repeat;
     background-position: center center;
     width: 60px;
     height: 25px;
-    margin-right: 5px;
-    vertical-align: middle;
+    margin: 0 auto 10px;
+    
+    
+    @include breakpoint(medium){
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 0;
+      margin-right: 5px;
+    }
   }
 }
 
 .title-bg-white{
   display: inline-block;
   margin: 0;
-  padding: 30px 40px;
-  border-left: 1px solid $blue;
-  border-right: 1px solid $blue;
+  padding: 10px;
   background: $white;
-  width: 60%;
+  @include breakpoint(medium){
+    width: 60%;
+    border-left: 1px solid $blue;
+    border-right: 1px solid $blue;
+    padding: 30px 40px;
+  }
 }
 /*********************
 NEWSLETTER
@@ -325,13 +364,19 @@ SECTION TITLE
 *********************/ 
 
 .section-title{
+  &.main{
+    margin-top: 5em;
+    @include breakpoint(medium){
+      margin-top: 6em;
+    }
+  }
   &.title-wave{
     h2{
-      font-size: 3em;
-      line-height: 69px;
+      font-size: 2em;
+      line-height: 1;
       color: $blue;
       position: relative;
-      padding: 60px 20px;
+      padding: 40px 20px;
       display: inline-block;
       &:after, &:before{
         content: '';
@@ -344,10 +389,21 @@ SECTION TITLE
         display: block;
       }
       &:before{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
       &:after{
-        margin-top: 30px;
+        margin-top: 20px;
+      }
+      @include breakpoint(medium){
+        padding: 60px 20px;
+        font-size: 3em;
+        line-height: 1;
+        &:before{
+          margin-bottom: 40px;
+        }
+        &:after{
+          margin-top: 40px;
+        }
       }
     }
   }

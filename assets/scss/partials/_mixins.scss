@@ -366,3 +366,9 @@ $transition: all 0.3s ease-in-out;
 			 -o-transform-origin: $position;
 				  transform-origin: $position;
 }
+
+@mixin bg-wave(){
+  background-image: url(../img/wave-pattern.svg);
+  background-repeat: repeat;
+  background-position: center center;
+}

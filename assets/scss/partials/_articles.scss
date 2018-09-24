@@ -2,107 +2,132 @@
     margin-top: 40px;
     margin-bottom: 40px;
     &-item{
+        background: $white;
+        position: relative;
         &-inner{
-            background: $white;
-            position: relative;
-            height: 480px;
             &.big{
                 .img{
-                    height: 250px;
+                    @include breakpoint(medium){
+                        height: 250px;
+                    }
                 }
                 .content{
                     h3{
-                        font-size: 1.5em;
+                        @include breakpoint(medium){
+                            font-size: 1.5em;
+                        }
                     }
                 }
             }
-            &:hover{
-                @extend .box-shadow-hover;
-            }
+            
             .img{
                 display: block;
-                height: 200px;
+                height: 100px;
                 position: relative;
                 -webkit-background-size: cover;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                background-color: $gray;
+                @include breakpoint(medium){
+                    height: 200px;
+                }
+            }
+            .cat-icon{
+                width: 50px;
+                height: 50px;
+                background-image: url(../img/icon-house.svg);
+                background-size: 75%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: $light-green;
+                border: 5px solid $white;
+                position: absolute;
+                bottom: 25px;
+                left: 20px;
+                -webkit-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+                border-radius: 50%;
+                @include breakpoint(medium){
+                    bottom: -25px;
+                    left: 30px;
+                }
+                &.icon{
+                    &-megaphone{
+                        background-image: url(../img/icon-megaphone.svg);
+                    }
+                    &-map{
+                        background-image: url(../img/icon-map.svg);
+                    }
+                    &-house{
+                        background-image: url(../img/icon-house.svg);
+                    }
+                    &-apartment{
+                        background-image: url(../img/icon-apartment.svg);
+                    }
+                    &-sign{
+                        background-image: url(../img/icon-sign.svg);
+                    }
+                    &-piggybank{
+                        background-image: url(../img/icon-piggybank.svg);
+                    }
+                    &-smiley{
+                        background-image: url(../img/icon-smiley.svg);
+                    }
+                    &-cellphone{
+                        background-image: url(../img/icon-cellphone.svg);
+                    }
+                }
             }
             .content{
                 color: $medium-gray;
-                padding: 30px;
-                position: relative;
-                .cat-icon{
-                    width: 50px;
-                    height: 50px;
-                    background-image: url(../img/icon-house.svg);
-                    background-size: 75%;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-color: $light-green;
-                    border: 5px solid $white;
-                    position: absolute;
-                    top: -25px;
-                    left: 30px;
-                    -webkit-transition: all .3s ease;
-                    -o-transition: all .3s ease;
-                    transition: all .3s ease;
-                    border-radius: 50%;
-                    &.icon{
-                        &-megaphone{
-                            background-image: url(../img/icon-megaphone.svg);
-                        }
-                        &-map{
-                            background-image: url(../img/icon-map.svg);
-                        }
-                        &-house{
-                            background-image: url(../img/icon-house.svg);
-                        }
-                        &-apartment{
-                            background-image: url(../img/icon-apartment.svg);
-                        }
-                        &-sign{
-                            background-image: url(../img/icon-sign.svg);
-                        }
-                        &-piggybank{
-                            background-image: url(../img/icon-piggybank.svg);
-                        }
-                        &-smiley{
-                            background-image: url(../img/icon-smiley.svg);
-                        }
-                        &-cellphone{
-                            background-image: url(../img/icon-cellphone.svg);
-                        }
-                    }
+                padding: 15px 20px 20px;
+                
+                @include breakpoint(medium){
+                    padding: 30px;
                 }
+                
                 .category{
                     font-size: .9em;
-                    margin: 10px 0;
+                    margin-bottom: 10px;
+                    @include breakpoint(medium){
+                        margin: 10px 0;
+                    }
                 }
                 h3{
                     font-size: 1.3125em;
                     line-height: 1.1;
-                    margin-bottom: 2em;
+                    margin-bottom: 10px;
+                    @include breakpoint(medium){
+                        margin-bottom: 2em;
+                    }
                 }
             }
 
             .user {
                 color: $medium-gray;
                 font-size: .8em;
-                position: absolute;
-                left: 30px;
-                bottom: 20px;
-                padding-bottom: 3px;
+                @include breakpoint(medium){
+                    position: absolute;
+                    left: 30px;
+                    bottom: 20px;
+                }
             }
+        }
+        &:hover{
+            @extend .box-shadow-hover;
         }
     }
 }
 
 h2.title-article{
+    font-size: 1.6em;
     text-align: center;
-    margin: 10px;
+    margin: 10px 0 0;
     @include breakpoint(large){
         text-align: left;
         margin:0;
+        font-size: 2em;
     }
 }

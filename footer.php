@@ -2,7 +2,7 @@
       <div class="section-padding-top">
         <div class="grid-container">
           <div class="grid-x">
-            <div class="large-12 cell">
+            <div class="small-12 cell">
               <img src="assets/img/buildings_bottom.svg">
             </div>
           </div>

@@ -12,8 +12,10 @@ body {
     color: $gray;
 }
 
-p{
-  font-size: 1.1em;
+p{  
+  @include breakpoint(medium){
+    font-size: 1.1em;
+  }
 }
   
 h1,h2,h3,
