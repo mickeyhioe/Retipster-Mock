@@ -281,7 +281,7 @@ BOOK COVER
     background-image: url(../img/building.svg);
   }
   &-title{
-    text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+    //text-shadow: 1px 1px 3px rgba(0,0,0,.8);
     width: 60%;
     @include breakpoint(medium) {
       width: 100%;
@@ -292,7 +292,7 @@ BOOK COVER
   &-author{
     position: absolute;
     bottom: 20px;
-    text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+    //text-shadow: 1px 1px 3px rgba(0,0,0,.8);
     @include breakpoint(medium) {
       text-shadow: none;
     }
