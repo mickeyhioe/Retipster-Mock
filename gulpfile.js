@@ -37,12 +37,10 @@ gulp.task('styles', function() {
     
 // JSHint, concat, and minify JavaScript
 gulp.task('site-js', function() {
-  return gulp.src([	
-	  
-           // Grab your custom scripts
-  		  './assets/js/scripts/*.js'
-  		  
-  ])
+    return gulp.src([	
+        // Grab your custom scripts
+        './assets/js/scripts/*.js'  		  
+    ])
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(jshint())
@@ -99,7 +97,7 @@ gulp.task('foundation-js', function() {
 
 // Update Foundation with Bower and save to /node_modules
 gulp.task('bower', function() {
-  return bower({ cmd: 'update'})
+    return bower({ cmd: 'update'})
     .pipe(gulp.dest('node_modules/'))
 });  
 
@@ -126,18 +124,18 @@ gulp.task('browsersync', function() {
 // Watch files for changes (without Browser-Sync)
 gulp.task('watch', function() {
 
-  // Watch .scss files
-  gulp.watch('./assets/scss/**/*.scss', ['styles']);
+    // Watch .scss files
+    gulp.watch('./assets/scss/**/*.scss', ['styles']);
 
-  // Watch site-js files
-  gulp.watch('./assets/js/scripts/*.js', ['site-js']);
-  
-  // Watch foundation-js files
-  gulp.watch('./node_modules/foundation-sites/js/*.js', ['foundation-js']);
+    // Watch site-js files
+    gulp.watch('./assets/js/scripts/*.js', ['site-js']);
+    
+    // Watch foundation-js files
+    gulp.watch('./node_modules/foundation-sites/js/*.js', ['foundation-js']);
 
 }); 
 
 // Run styles, site-js and foundation-js
 gulp.task('default', function() {
-  gulp.start('styles', 'site-js', 'foundation-js');
+    gulp.start('styles', 'site-js', 'foundation-js');
 });
