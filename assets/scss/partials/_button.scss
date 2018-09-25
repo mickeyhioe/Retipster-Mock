@@ -28,4 +28,14 @@
         color: $white;
       }
     }
+    &.outline{
+        background: $white;
+        border: 1px solid $blue;
+        color: $blue;
+        @include transition($transition);
+        &:hover{
+            background: $blue;
+            color: $white;
+        }
+    }
 }

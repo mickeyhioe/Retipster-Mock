@@ -32,7 +32,7 @@
             <!-- /Main -->
 
             <?php include('includes/newsletter.php');?>
-                     
+
           </div>
 
         </div>
@@ -41,10 +41,9 @@
     </section>
     <!-- /Section Intro -->
    
-    <?php 
-      $article_title = "Sort articles by:";
-      include('includes/section-articles.php'); 
-    ?>
+    <?php include('includes/section-products.php'); ?>
+
+    <?php include('includes/section-club.php'); ?>
 
     <?php include('includes/section-subscribe.php'); ?>
 

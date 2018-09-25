@@ -1,5 +1,5 @@
     <!-- Section Social -->
-    <section id="section-social" class="sawtooth-vertical bg-medium-blue section-padding">
+    <section id="section-social" class="sawtooth-vertical bg-light-green section-padding">
       <div class="grid-container">
 
         <div class="grid-x">

@@ -1,0 +1,88 @@
+/*********************
+PRODUCTS
+*********************/ 
+.products{
+  &-item{
+    background: $white;
+    display: block;    
+    position: relative;
+    border-right: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+    padding: 50px 20px;
+    &:nth-of-type(even){
+      border-right: none;
+    }
+    &:last-of-type,
+    &:nth-last-of-type(2){
+      border-bottom: none;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      margin-left: -35px;
+      bottom: 0;
+      border: 35px solid transparent;
+      border-bottom: 20px solid $white;
+    }
+    &.triangle{
+      &-light-green:after{
+        border-bottom-color: $light-green;
+      }
+      &-yellow:after{
+        border-bottom-color: $yellow;
+      }
+      &-green:after{
+        border-bottom-color: $green;
+      }
+      &-medium-blue:after{
+        border-bottom-color: $medium-blue;
+      }
+      &-orange:after{
+        border-bottom-color: $orange;
+      }
+      &-medium-gray:after{
+        border-bottom-color: $medium-gray;
+      }
+      &-red:after{
+        border-bottom-color: $red;
+      }
+      &-dark-blue:after{
+        border-bottom-color: $dark-blue;
+      }
+    }
+    @include breakpoint(large){
+      &:nth-of-type(even){
+        border-right: 1px solid $blue;
+      }
+      &:nth-of-type(5n+5){
+        border-right: none;
+      }
+      &:nth-of-type(n+6){
+        border-bottom: none;
+      }
+    }
+  }
+  &-title{
+    margin-bottom: 10px;
+    h3{
+      font-size: 1.5em;
+      line-height: 1;
+    }
+  }
+  &-content{
+    margin-bottom: 20px; 
+    p{
+      font-size: 1em;
+      color: $gray;
+      line-height: 1.4;
+    }
+  }
+  .button{
+    margin-bottom: 0;
+    min-width: 160px;
+    i{
+      margin-right: 5px;
+    }
+  }
+}

@@ -1,11 +1,6 @@
-/************************************************
-
-Typography
-
-*************************************************/
-
-
-
+/*********************
+TYPOGRAPHY
+*********************/ 
 body {
     font-family: $activgrotesk_light;
     font-weight: 300;
@@ -55,13 +50,6 @@ h6 {
     font-size: 1.15em;
 }
 
-a{
-  color: $blue;
-  &:hover{
-    color: $medium-blue;
-    transition: .3s linear all;
-  }
-}
   
   @media screen and (min-width: 1024px) {
     h1 {

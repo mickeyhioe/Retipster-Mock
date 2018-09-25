@@ -1,0 +1,67 @@
+/*********************
+BRAND CAROUSEL
+*********************/ 
+
+.brands-carousel {
+  width: 100%;
+  margin: auto;
+  border: 2px solid #E7EBEE;
+  height: 92px;
+  position: relative;
+  margin-top: 10px;
+  background: #fff;
+  .brands-item {
+    height: 100%;
+    position: relative;
+    &:after {
+      content: '';
+      height: 27px;
+      width: 2px;
+      position: absolute;
+      background-color: #EAEEEF; 
+      right: 1px;
+      top: 50%;
+      margin-top: -14px;
+    }
+    img {
+      height: 100%;
+      -webkit-transform: scale(0.76);
+      -ms-transform: scale(0.76);
+      transform: scale(0.76);
+    }
+  }
+  .owl-stage-outer, .owl-stage, .owl-item {
+    height: 100%;
+  }
+
+  .owl-nav {
+    display: block !important;
+    .owl-next,
+    .owl-prev {
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      outline: none;
+      top: 50%;
+      margin-top: -17px;
+      z-index: 5;
+      background-position: center;
+      -webkit-background-size: 34px 34px;
+      background-size: 34px;
+      background-repeat: no-repeat;
+      span {
+        display: none;
+      }
+    }
+
+    .owl-prev {
+      left: -18px;
+      background: url(../img/arrow_left.svg)!important;
+    }
+
+    .owl-next {
+      right: -18px;
+      background: url(../img/arrow_right.svg)!important;
+    }
+  }
+}

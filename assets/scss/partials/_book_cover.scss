@@ -1,0 +1,48 @@
+/*********************
+BOOK COVER
+*********************/ 
+.book-cover{
+  background-size: cover;
+  background-image: url(../img/investor-hacks.svg);
+  height: 250px;
+  padding: 20px;
+  position: relative;
+  @include breakpoint(medium) {
+    height: 400px;
+  }
+  &.building{
+    background-image: url(../img/building.svg);
+  }
+  &-title{
+    width: 60%;
+    @include breakpoint(medium) {
+      width: 100%;
+      margin-top: 20px;
+      text-shadow: none;
+    }
+  }
+  &-author{
+    position: absolute;
+    bottom: 20px;
+    @include breakpoint(medium) {
+      text-shadow: none;
+    }
+  }
+}
+
+.book-cover-retipster-club{
+  background-image: url(../img/building.svg);
+  background-color: $green;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  text-align: center;
+  padding:20px;
+  img{
+    width: 250px;
+    height: auto;
+    @include breakpoint(medium) {
+      width: 350px;
+    }
+  }
+}

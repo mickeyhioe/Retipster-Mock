@@ -42,7 +42,15 @@ SECTION 1
 
 /*********************
 GENERAL STYLES
-*********************/ 
+*********************/
+
+a{
+  color: $blue;
+  &:hover{
+    color: $medium-blue;
+    transition: .3s linear all;
+  }
+}
 
 .sawtooth-vertical {
   @include saw-tooth-vertical();
@@ -80,76 +88,6 @@ SECTION PADDING
     }
   }
 }
-
-
-/*********************
-BRAND CAROUSEL
-*********************/ 
-
-.brands-carousel {
-  width: 100%;
-  margin: auto;
-  border: 2px solid #E7EBEE;
-  height: 92px;
-  position: relative;
-  margin-top: 10px;
-  background: #fff;
-  .brands-item {
-    height: 100%;
-    position: relative;
-    &:after {
-      content: '';
-      height: 27px;
-      width: 2px;
-      position: absolute;
-      background-color: #EAEEEF; 
-      right: 1px;
-      top: 50%;
-      margin-top: -14px;
-    }
-    img {
-      height: 100%;
-      -webkit-transform: scale(0.76);
-      -ms-transform: scale(0.76);
-      transform: scale(0.76);
-    }
-  }
-  .owl-stage-outer, .owl-stage, .owl-item {
-    height: 100%;
-  }
-
-  .owl-nav {
-    display: block !important;
-    .owl-next,
-    .owl-prev {
-      width: 34px;
-      height: 34px;
-      position: absolute;
-      outline: none;
-      top: 50%;
-      margin-top: -17px;
-      z-index: 5;
-      background-position: center;
-      -webkit-background-size: 34px 34px;
-      background-size: 34px;
-      background-repeat: no-repeat;
-      span {
-        display: none;
-      }
-    }
-
-    .owl-prev {
-      left: -18px;
-      background: url(../img/arrow_left.svg)!important;
-    }
-
-    .owl-next {
-      right: -18px;
-      background: url(../img/arrow_right.svg)!important;
-    }
-  }
-}
-
 
 /*********************
 UTILITY
@@ -191,7 +129,6 @@ UTILITY
   padding: 2em;
 }
 
-
 .box-shadow{
   box-shadow: 0 10px 15px rgba(0,0,0,0.25);
 }
@@ -220,6 +157,12 @@ UTILITY
   }
 }
 
+/*********************
+ICON
+*********************/ 
+.icon-shop{
+  background-image: url(../img/icon-shop.svg);
+}
 
 /*********************
 BOX WAVE
@@ -235,6 +178,47 @@ BOX WAVE
     border-top: 1px solid $blue;
     @include bg-wave();
   }
+  &.box-wave-top-bottom{
+    &:before{
+      content:'';
+      display: block;
+      height: 40px;
+      width: 100%;
+      border-bottom: 1px solid $blue;
+      @include bg-wave();
+    }
+  }
+  &-top-icon{
+    height: 40px;
+    border: 1px solid $blue;
+    border-bottom: none;
+    background-color: $white;
+    @include bg-wave();
+    position: relative;
+    span{
+      border: 1px solid $blue;
+      border-radius: 100%;
+      background-color: $white;
+      background-size: 60%;
+      background-position: center center;
+      position: absolute;
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      left: 50%;
+      top: -5px;
+      margin-left: -25px;
+      display: block;
+      z-index:1;
+      @include breakpoint(medium){
+        width: 100px;
+        height: 100px;
+        top: -25px;
+        background-size: 70%;
+        margin-left: -50px;
+      }
+    }
+  }  
 }
 
 .bg-wave{
@@ -265,94 +249,7 @@ BOX WHITE
 }
 
 
-/*********************
-BOOK COVER
-*********************/ 
-.book-cover{
-  background-size: cover;
-  background-image: url(../img/investor-hacks.svg);
-  height: 250px;
-  padding: 20px;
-  position: relative;
-  @include breakpoint(medium) {
-    height: 400px;
-  }
-  &.building{
-    background-image: url(../img/building.svg);
-  }
-  &-title{
-    //text-shadow: 1px 1px 3px rgba(0,0,0,.8);
-    width: 60%;
-    @include breakpoint(medium) {
-      width: 100%;
-      margin-top: 20px;
-      text-shadow: none;
-    }
-  }
-  &-author{
-    position: absolute;
-    bottom: 20px;
-    //text-shadow: 1px 1px 3px rgba(0,0,0,.8);
-    @include breakpoint(medium) {
-      text-shadow: none;
-    }
-  }
-}
 
-.title-money{
-  &:before{
-    content:'';
-    display: block;
-    background: url(../img/icon-money.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 120px;
-    height: 100px;
-    margin: 0 auto;
-  }
-}
-
-
-.title-mail{
-  margin-bottom: 20px;
-  text-align: center;
-  @include breakpoint(medium){
-    text-align: left;
-  }
-
-  &:before{
-    content:'';
-    display: block;
-    background: url(../img/icon-mail.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 60px;
-    height: 25px;
-    margin: 0 auto 10px;
-    
-    
-    @include breakpoint(medium){
-      display: inline-block;
-      vertical-align: middle;
-      margin-bottom: 0;
-      margin-right: 5px;
-    }
-  }
-}
-
-.title-bg-white{
-  display: block;
-  margin: 0;
-  padding: 10px;
-  background: $white;
-  @include breakpoint(medium){
-    display: inline-block;
-    width: 60%;
-    border-left: 1px solid $blue;
-    border-right: 1px solid $blue;
-    padding: 30px 40px;
-  }
-}
 /*********************
 NEWSLETTER
 *********************/ 
