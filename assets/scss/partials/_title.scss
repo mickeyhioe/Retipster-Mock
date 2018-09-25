@@ -75,3 +75,53 @@ TITLE
     padding: 30px 40px;
   }
 }
+
+/*********************
+SECTION TITLE
+*********************/ 
+
+.section-title{
+  &.main{
+    margin-top: 5em;
+    @include breakpoint(medium){
+      margin-top: 6em;
+    }
+  }
+  &.title-wave{
+    h2{
+      font-size: 2em;
+      line-height: 1;
+      color: $blue;
+      position: relative;
+      padding: 40px 20px;
+      display: inline-block;
+      &:after, &:before{
+        content: '';
+        -webkit-background-size: 100% 100%;
+        background-size: 100%;
+        background-repeat: repeat-x;
+        background-position: center;
+        background-image: url(../img/title-wave.svg);
+        height: 15px;
+        display: block;
+      }
+      &:before{
+        margin-bottom: 20px;
+      }
+      &:after{
+        margin-top: 20px;
+      }
+      @include breakpoint(medium){
+        padding: 60px 20px;
+        font-size: 3em;
+        line-height: 1;
+        &:before{
+          margin-bottom: 40px;
+        }
+        &:after{
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
