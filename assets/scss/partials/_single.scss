@@ -1,0 +1,143 @@
+.article-main-info {
+	border-bottom: 1px solid rgba(195, 203, 203, 1);
+	padding-bottom: 35px;
+	margin-bottom: 15px;
+	.article-author {
+		padding-top: 35px;
+		.author-main {
+			display: inline-block;
+			.image {
+				display: inline-block;
+				float: left;
+				img {
+					width: 71px;
+					height: auto;
+					border-radius: 50%;
+				}
+			}
+			.name {
+				display: inline-block;
+				padding-left: 17px;
+				float: left;
+				margin-top: -5px;
+				h3 {
+					color: rgba(5, 75, 98, 1);
+					font-size: 1.1875em;
+					font-weight: normal;
+					display: inline-block;
+					line-height: 26px;
+				}
+				.time {
+					display: block;
+					font-size: 1.1875em;
+					line-height: 26px;
+					margin-top: -6px;
+					color: rgba(130, 147, 159, 1);
+				}
+			}
+		}
+		.article-activity {
+			display: inline-block;
+			float: right;
+			margin-top: 9px;
+			position: relative;
+			overflow: hidden;
+			.activity-info {
+				display: inline-block;
+				font-size: 1.25em;
+				font-family: "aktivGrotesk Bold", sans-serif;
+				font-weight: 600;
+				color: rgba(5, 75, 98, 1);
+				position: relative;
+				border: 1px solid rgba(5, 75, 98, 1);
+				opacity: 1;
+				transition: opacity .5s ease;
+				&.comments-info {
+					margin-right: 15px;
+					&:before {
+						background-image: url(https://retipster.com/wp-content/themes/retipster/img/icons/comment.svg);
+						width: 30px;
+						height: 22px;
+						margin-top: -9px;
+						content: '';
+						background-size: cover;
+						background-position: center;
+						position: absolute;
+						top: 50%;
+						left: 17px;
+					}
+				}
+				a {
+					color: inherit;
+					display: block;
+					padding-left: 57px;
+					padding-top: 9px;
+					padding-bottom: 9px;
+					padding-right: 17px;
+				}
+			}
+		}
+		.article-categories-info {
+			font-size: 1.1875em;
+			color: rgba(130, 147, 159, 1);
+			padding-left: 69px;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				width: 44px;
+				height: 44px;
+				background-image: url(https://retipster.com/wp-content/themes/retipster/img/icons/phone-no-bg.svg);
+				-webkit-background-size: cover;
+				background-size: cover;
+				background-position: center;
+				left: 10px;
+				top: 50%;
+				margin-top: -18px;
+			}
+			p {
+				padding-top: 8px;
+				a {
+					font-size: 0.7em;
+					color: rgba(0, 147, 207, 1);
+					transition: color 0.4s ease;
+				}
+			}
+		}
+	}
+}
+.article-content {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	iframe {
+		width: 100%;
+		height: 590px;
+		max-height: 33vw;
+	}
+}
+blockquote.alignright, figure.wp-caption.alignright, img.alignright {
+	margin: 7px 0 7px 24px;
+}
+.alignright {
+	float: right;
+}
+img {
+	vertical-align: middle;
+}
+.article-sidebar-wrapper {
+	.article-sidebar-item {
+		margin-bottom: 41px;
+		color: rgba(5, 75, 98, 1);
+		position: relative;
+		.sidebar-title {
+			h2 {
+				font-size: 2.25em;
+			}
+		}
+	}
+}
+.widgettitle {
+	text-align: center;
+}
