@@ -12274,11 +12274,15 @@ img {
     padding: 1em; }
   .button.bg-green {
     background: #02b491;
-    color: white;
-    border: none; }
-    .button.bg-green:hover {
+    border: 2px solid #02b491;
+    color: white; }
+    .button.bg-green:focus {
       background: #018268;
       color: white; }
+    .button.bg-green:hover, .button.bg-green:active {
+      background: white;
+      color: #02b491;
+      border-color: #02b491; }
   .button.outline {
     background: white;
     border: 1px solid #2c4c61;
