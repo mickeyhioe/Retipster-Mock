@@ -1,5 +1,10 @@
-    <!-- Section 4 -->
-    <section id="section-4" class="sawtooth-vertical bg-light-gray section-padding ">
+    <?php
+      if (!isset($article_title)){
+        $article_title ="Articles from our blog";
+      }
+    ?>
+    <!-- Section Articles -->
+    <section id="section-articles" class="sawtooth-vertical bg-light-gray section-padding ">
 
        <!-- Articles Nav -->
       <div class="grid-container">       
@@ -8,7 +13,7 @@
             <div class="grid-container">
               <div class="grid-x grid-padding-x box-wave align-middle">
                 <div class="large-6 cell">
-                  <h2 class="text-blue title-article">Articles from our blog</h2>
+                  <h2 class="text-blue title-article"><?php echo $article_title;?></h2>
                 </div>
                 <div class="large-6 cell">
                   <nav class="sort-articles-menu">
@@ -198,4 +203,4 @@
       <!-- /Help Category -->
 
     </section>
-    <!-- /Section 4 -->
+    <!-- /Section Articles -->

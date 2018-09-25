@@ -3,8 +3,8 @@
   include('includes/header.php');
 ?>
 
-    <!-- Section 1 -->
-    <section id="section-1" class="full-height main-bg-svg">      
+    <!-- Section Intro -->
+    <section id="section-intro" class="full-height main-bg-svg">      
 
       <div class="grid-container">
         <div class="grid-x grid-padding-x full-height align-center">
@@ -40,7 +40,7 @@
       </div>
 
     </section>
-    <!-- /Section 1 -->
+    <!-- /Section Intro -->
 
     
     <?php include('includes/section-toolbox.php'); ?>

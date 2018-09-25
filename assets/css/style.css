@@ -11352,10 +11352,10 @@ a.thumbnail {
   src: url("../fonts/proximaNova/ProximaNova-Bold.eot#iefix") format("embedded-opentype"), url("../fonts/proximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/proximaNova/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/proximaNova/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg"); }
 
 .text-black {
-  color: #000000; }
+  color: black; }
 
 .text-white {
-  color: #ffffff; }
+  color: white; }
 
 .text-blue {
   color: #2c4c61; }
@@ -11379,10 +11379,10 @@ a.thumbnail {
   color: #82939f; }
 
 .bg-black {
-  background: #000000; }
+  background: black; }
 
 .bg-white {
-  background: #ffffff; }
+  background: white; }
 
 .bg-blue {
   background: #2c4c61; }
@@ -11494,7 +11494,7 @@ SECTION 1
     background-size: contain;
     background-position: top left;
     background-repeat: no-repeat;
-    background-color: #ffffff;
+    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -11679,7 +11679,7 @@ UTILITY
 BOX WAVE
 *********************/
 .box-wave {
-  background-color: #ffffff;
+  background-color: white;
   border: 1px solid #2c4c61; }
   .box-wave:after {
     content: '';
@@ -11712,7 +11712,7 @@ BOX BLUE
 BOX WHITE
 *********************/
 .box-white {
-  background-color: #ffffff;
+  background-color: white;
   border: 1px solid #2c4c61;
   border-bottom: none; }
 
@@ -11780,7 +11780,7 @@ BOOK COVER
   display: block;
   margin: 0;
   padding: 10px;
-  background: #ffffff; }
+  background: white; }
   @media print, screen and (min-width: 40em) {
     .title-bg-white {
       display: inline-block;
@@ -11832,6 +11832,36 @@ SECTION TITLE
         margin-bottom: 40px; }
       .section-title.title-wave h2:after {
         margin-top: 40px; } }
+
+/*********************
+VIDEO CONTAINER
+*********************/
+.video-container-wave {
+  margin-top: 20px; }
+  @media print, screen and (min-width: 40em) {
+    .video-container-wave {
+      position: relative;
+      margin-top: 40px;
+      margin-right: 40px;
+      margin-bottom: 60px; }
+      .video-container-wave:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: -40px;
+        bottom: -40px;
+        z-index: -1;
+        background-image: url(../img/wave-pattern.svg);
+        background-repeat: repeat;
+        background-position: center center; } }
+  @media print, screen and (min-width: 64em) {
+    .video-container-wave {
+      margin-bottom: 0; } }
+  @media screen and (min-width: 80em) {
+    .video-container-wave {
+      margin-left: -40px; } }
 
 /*********************
 NAVIGATION
@@ -12095,7 +12125,7 @@ MOBILE MENU
   margin-top: 40px;
   margin-bottom: 40px; }
   .article-grid-item {
-    background: #ffffff;
+    background: white;
     position: relative; }
     @media print, screen and (min-width: 40em) {
       .article-grid-item-inner.big .img {
@@ -12122,7 +12152,7 @@ MOBILE MENU
       background-position: center;
       background-repeat: no-repeat;
       background-color: #b7e1d8;
-      border: 5px solid #ffffff;
+      border: 5px solid white;
       position: absolute;
       bottom: 25px;
       left: 20px;
@@ -12193,9 +12223,9 @@ h2.title-article {
   border: 2px solid #3d92cc; }
   .button:focus {
     background: #3d92cc;
-    color: #ffffff; }
+    color: white; }
   .button:hover, .button:active {
-    background: #ffffff;
+    background: white;
     color: #3d92cc; }
   .button.large {
     font-size: 1em;
@@ -12205,11 +12235,11 @@ h2.title-article {
     padding: 1em; }
   .button.bg-green {
     background: #02b491;
-    color: #ffffff;
+    color: white;
     border: none; }
     .button.bg-green:hover {
       background: #018268;
-      color: #ffffff; }
+      color: white; }
 
 /*********************
 TOOLBOX
@@ -12217,7 +12247,7 @@ TOOLBOX
 .toolbox {
   padding-top: 40px; }
   .toolbox-item {
-    background: #ffffff;
+    background: white;
     border: 1px solid #2c4c61;
     display: block;
     position: relative;
@@ -12246,7 +12276,7 @@ TOOLBOX
     .toolbox-icon span {
       border: 1px solid #2c4c61;
       border-radius: 100%;
-      background-color: #ffffff;
+      background-color: white;
       background-size: 60%;
       background-position: center center;
       position: absolute;
@@ -12301,7 +12331,7 @@ HELP CATEGORY
     padding-top: 40px; } }
 
 .help-category-item {
-  background: #ffffff;
+  background: white;
   display: block;
   position: relative;
   margin-bottom: 40px !important; }
@@ -12311,7 +12341,7 @@ HELP CATEGORY
   .help-category-icon span {
     width: 70px;
     height: 70px;
-    border: 5px solid #ffffff;
+    border: 5px solid white;
     border-radius: 100%;
     background-color: #b7e1d8;
     background-size: 60%;
@@ -12327,7 +12357,7 @@ HELP CATEGORY
         width: 90px;
         height: 90px;
         margin-left: -45px;
-        border: 10px solid #ffffff;
+        border: 10px solid white;
         top: -35px; } }
 
 .help-category-content {
@@ -12349,7 +12379,7 @@ SOCIAL CATEGORY
 .social-category {
   padding-top: 40px; }
   .social-category-item {
-    background: #ffffff;
+    background: white;
     display: block;
     position: relative;
     margin-bottom: 40px !important; }
@@ -12414,7 +12444,7 @@ HEADER
   top: -70px; }
 
 .top-bar {
-  background: #ffffff;
+  background: white;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   padding: 0; }
@@ -12438,7 +12468,7 @@ HEADER
       .top-bar .logo {
         margin-left: 20px; } }
   .top-bar ul {
-    background: #ffffff; }
+    background: white; }
 
 .menu-container {
   display: none; }

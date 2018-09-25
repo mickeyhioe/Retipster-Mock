@@ -1,5 +1,5 @@
-    <!-- Section 3 -->
-    <section id="section-3" class="section-padding">
+    <!-- Section E-book -->
+    <section id="section-ebook" class="section-padding">
       <div class="grid-container">
         <div class="grid-x">
           <div class="large-12 cell">
@@ -31,4 +31,4 @@
         </div>
       </div>
     </section>
-    <!-- /Section 3 -->
+    <!-- /Section E-Book -->

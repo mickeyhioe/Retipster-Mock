@@ -1,5 +1,5 @@
-    <!-- Section 2 -->  
-    <section id="section-2" class="sawtooth-vertical bg-medium-blue section-padding">
+    <!-- Section Toolbox -->  
+    <section id="section-toolbox" class="sawtooth-vertical bg-medium-blue section-padding">
       <div class="grid-container">
         <div class="grid-x grid-padding-x">
           <div class="small-12 cell">
@@ -72,4 +72,4 @@
       <!-- /Toolbox -->
 
     </section>
-    <!-- /Section 2 -->
+    <!-- /Section Toolbox -->

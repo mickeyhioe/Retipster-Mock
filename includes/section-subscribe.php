@@ -1,5 +1,5 @@
-    <!-- Section 5 -->
-    <section id="section-5" class="section-padding">
+    <!-- Section Subscribe -->
+    <section id="section-subscribe" class="section-padding">
       <div class="grid-container">
         <div class="grid-x">
           <div class="small-12 cell">
@@ -24,4 +24,4 @@
         </div>
       </div>
     </section>
-    <!-- /Section 5 -->
+    <!-- /Section Subscribe -->
