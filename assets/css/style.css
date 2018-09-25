@@ -12692,7 +12692,7 @@ BRAND CAROUSEL
 TITLE ICON
 *********************/
 .title-money:before {
-  background: url(../img/icon-money.svg);
+  background: url("../img/icon-money.svg");
   content: '';
   display: block;
   background-repeat: no-repeat;
@@ -12702,7 +12702,27 @@ TITLE ICON
   margin: 0 auto; }
 
 .title-laurel:before {
-  background: url(../img/icon-laurel.svg);
+  background: url("../img/icon-laurel.svg");
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 100px;
+  margin: 0 auto; }
+
+.title-heart:before {
+  background: url("../img/icon-heart.svg");
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 100px;
+  margin: 0 auto; }
+
+.title-hand:before {
+  background: url("../img/icon-hand.svg");
   content: '';
   display: block;
   background-repeat: no-repeat;

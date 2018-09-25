@@ -3,30 +3,18 @@ TITLE ICON
 *********************/ 
 
 .title{
-  &-money{
-    &:before{
-      background: url(../img/icon-money.svg);
-      content:'';
-      display: block;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 120px;
-      height: 100px;
-      margin: 0 auto;
-    }
+  &-money:before{
+    @include title-icon('../img/icon-money.svg');
   }
-  &-laurel{
-    &:before{
-      background: url(../img/icon-laurel.svg);
-      content:'';
-      display: block;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 120px;
-      height: 100px;
-      margin: 0 auto;
-    }
-  }   
+  &-laurel:before{
+    @include title-icon('../img/icon-laurel.svg');
+  }
+  &-heart:before{
+    @include title-icon('../img/icon-heart.svg');
+  }
+  &-hand:before{
+    @include title-icon('../img/icon-hand.svg');
+  }
 }
 
 /*********************
