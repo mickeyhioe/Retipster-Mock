@@ -1,3 +1,6 @@
+/*********************
+ARTICLES
+*********************/
 .article-grid{
     margin-top: 40px;
     margin-bottom: 40px;
@@ -121,6 +124,10 @@
     }
 }
 
+/*********************
+ARTICLES NAVIGATION BAR
+*********************/
+
 h2.title-article{
     font-size: 1.6em;
     text-align: center;
@@ -129,5 +136,12 @@ h2.title-article{
         text-align: left;
         margin:0;
         font-size: 2em;
+    }
+}
+
+.button-container-article{
+    padding: 10px 0;
+    .button{
+        margin: 0;
     }
 }

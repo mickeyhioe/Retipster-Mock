@@ -42,7 +42,21 @@ SECTION 1
 
 /*********************
 GENERAL STYLES
-*********************/ 
+*********************/
+
+a{
+  color: $blue;
+  &:hover{
+    color: $medium-blue;
+    transition: .3s linear all;
+  }
+}
+
+ul.list{
+  li{
+    margin-bottom: 10px;
+  }
+}
 
 .sawtooth-vertical {
   @include saw-tooth-vertical();
@@ -62,94 +76,24 @@ SECTION PADDING
 .section-padding{
   padding-top: 3em;
   padding-bottom: 3em;
-  @include breakpoint(medium){
+  @include breakpoint(large){
     padding-top: 6em;
     padding-bottom: 6em;
   }
   &-top{
     padding-top: 3em;
     padding-bottom: 0;
-    @include breakpoint(medium){
+    @include breakpoint(large){
       padding-top: 6em;
     }
     &-large{
       padding-top: 6em;
-      @include breakpoint(medium){
+      @include breakpoint(large){
         padding-top: 10em;
       }
     }
   }
 }
-
-
-/*********************
-BRAND CAROUSEL
-*********************/ 
-
-.brands-carousel {
-  width: 100%;
-  margin: auto;
-  border: 2px solid #E7EBEE;
-  height: 92px;
-  position: relative;
-  margin-top: 10px;
-  background: #fff;
-  .brands-item {
-    height: 100%;
-    position: relative;
-    &:after {
-      content: '';
-      height: 27px;
-      width: 2px;
-      position: absolute;
-      background-color: #EAEEEF; 
-      right: 1px;
-      top: 50%;
-      margin-top: -14px;
-    }
-    img {
-      height: 100%;
-      -webkit-transform: scale(0.76);
-      -ms-transform: scale(0.76);
-      transform: scale(0.76);
-    }
-  }
-  .owl-stage-outer, .owl-stage, .owl-item {
-    height: 100%;
-  }
-
-  .owl-nav {
-    display: block !important;
-    .owl-next,
-    .owl-prev {
-      width: 34px;
-      height: 34px;
-      position: absolute;
-      outline: none;
-      top: 50%;
-      margin-top: -17px;
-      z-index: 5;
-      background-position: center;
-      -webkit-background-size: 34px 34px;
-      background-size: 34px;
-      background-repeat: no-repeat;
-      span {
-        display: none;
-      }
-    }
-
-    .owl-prev {
-      left: -18px;
-      background: url(../img/arrow_left.svg)!important;
-    }
-
-    .owl-next {
-      right: -18px;
-      background: url(../img/arrow_right.svg)!important;
-    }
-  }
-}
-
 
 /*********************
 UTILITY
@@ -191,7 +135,6 @@ UTILITY
   padding: 2em;
 }
 
-
 .box-shadow{
   box-shadow: 0 10px 15px rgba(0,0,0,0.25);
 }
@@ -220,139 +163,14 @@ UTILITY
   }
 }
 
-
 /*********************
-BOX WAVE
+ICON
 *********************/ 
-.box-wave{
-  background-color: $white;
-  border: 1px solid $blue;
-  &:after{
-    content:'';
-    display: block;
-    height: 40px;
-    width: 100%;
-    border-top: 1px solid $blue;
-    @include bg-wave();
-  }
-}
-
-.bg-wave{
-  @include bg-wave();
-}
-
-/*********************
-BOX BLUE
-*********************/ 
-.box-blue{
-  background: $light-blue;
-  padding: 10px;
-  border: 1px solid $blue;
-  border-bottom: none;
-  p{
-    margin-bottom: 0;
-    color: $blue;
-  }
-}
-
-/*********************
-BOX WHITE
-*********************/ 
-.box-white{
-  background-color: $white;
-  border: 1px solid $blue;
-  border-bottom: none;
+.icon-shop{
+  background-image: url(../img/icon-shop.svg);
 }
 
 
-/*********************
-BOOK COVER
-*********************/ 
-.book-cover{
-  background-size: cover;
-  background-image: url(../img/investor-hacks.svg);
-  height: 250px;
-  padding: 20px;
-  position: relative;
-  @include breakpoint(medium) {
-    height: 400px;
-  }
-  &.building{
-    background-image: url(../img/building.svg);
-  }
-  &-title{
-    //text-shadow: 1px 1px 3px rgba(0,0,0,.8);
-    width: 60%;
-    @include breakpoint(medium) {
-      width: 100%;
-      margin-top: 20px;
-      text-shadow: none;
-    }
-  }
-  &-author{
-    position: absolute;
-    bottom: 20px;
-    //text-shadow: 1px 1px 3px rgba(0,0,0,.8);
-    @include breakpoint(medium) {
-      text-shadow: none;
-    }
-  }
-}
-
-.title-money{
-  &:before{
-    content:'';
-    display: block;
-    background: url(../img/icon-money.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 120px;
-    height: 100px;
-    margin: 0 auto;
-  }
-}
-
-
-.title-mail{
-  margin-bottom: 20px;
-  text-align: center;
-  @include breakpoint(medium){
-    text-align: left;
-  }
-
-  &:before{
-    content:'';
-    display: block;
-    background: url(../img/icon-mail.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 60px;
-    height: 25px;
-    margin: 0 auto 10px;
-    
-    
-    @include breakpoint(medium){
-      display: inline-block;
-      vertical-align: middle;
-      margin-bottom: 0;
-      margin-right: 5px;
-    }
-  }
-}
-
-.title-bg-white{
-  display: block;
-  margin: 0;
-  padding: 10px;
-  background: $white;
-  @include breakpoint(medium){
-    display: inline-block;
-    width: 60%;
-    border-left: 1px solid $blue;
-    border-right: 1px solid $blue;
-    padding: 30px 40px;
-  }
-}
 /*********************
 NEWSLETTER
 *********************/ 
@@ -361,52 +179,92 @@ NEWSLETTER
 }
 
 /*********************
-SECTION TITLE
+VIDEO & IMAGE CONTAINER
 *********************/ 
-
-.section-title{
-  &.main{
-    margin-top: 5em;
-    @include breakpoint(medium){
-      margin-top: 6em;
+.video-container-wave,
+.image-container-wave{  
+  margin-top: 20px;
+  @include breakpoint(medium){
+    position: relative;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      right: -40px;
+      bottom: -40px;
+      z-index: -1;
+      @include bg-wave();      
     }
   }
-  &.title-wave{
-    h2{
-      font-size: 2em;
-      line-height: 1;
-      color: $blue;
-      position: relative;
-      padding: 40px 20px;
-      display: inline-block;
-      &:after, &:before{
-        content: '';
-        -webkit-background-size: 100% 100%;
-        background-size: 100%;
-        background-repeat: repeat-x;
-        background-position: center;
-        background-image: url(../img/title-wave.svg);
-        height: 15px;
-        display: block;
-      }
-      &:before{
-        margin-bottom: 20px;
-      }
-      &:after{
-        margin-top: 20px;
-      }
-      @include breakpoint(medium){
-        padding: 60px 20px;
-        font-size: 3em;
-        line-height: 1;
-        &:before{
-          margin-bottom: 40px;
-        }
-        &:after{
-          margin-top: 40px;
-        }
-      }
-    }
+  @include breakpoint(large){
+    margin-bottom: 0;
+  }
+  @include breakpoint(xlarge){
+    margin-left: -40px;
   }
 }
 
+
+.image-container-layer{  
+  position: relative;
+  padding-bottom: 40%;
+  &.padding-bottom-normal{
+    padding-bottom: 20px;
+  }
+  @include breakpoint(medium){
+    padding-bottom: 30%;
+  }
+  @include breakpoint(large){
+    padding-bottom: 20%;
+  }
+  .image-foreground{
+    position: absolute;
+    @include transition($transition);
+    &.couple{
+      width: 50%;
+      max-width: 300px;
+      height: auto;
+      top: 20%;
+      left: 25%;
+      @include breakpoint(xlarge){
+        left: 18%;
+      }
+    }
+    &.working{
+      width: 60%;
+      max-width: 340px;
+      height: auto;
+      top: 25%;
+      left: 20%;
+      @include breakpoint(large){
+        top: 40%;
+        left: 15%;
+      }
+    }
+  }
+
+  .image-background {
+    //padding-top: 58%;
+    background: $teal;
+    padding: 30px;
+    text-align: center;
+  }
+  .image-rounded{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    @include breakpoint(medium){
+      width: 250px;
+      height: 250px;
+    }
+    @include breakpoint(large){
+      width: 300px;
+      height: 300px;
+    }
+  }
+}

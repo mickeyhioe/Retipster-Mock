@@ -1,0 +1,135 @@
+/*********************
+TITLE ICON
+*********************/ 
+
+.title{
+  &-money:before{
+    @include title-icon('../img/icon-money.svg');
+  }
+  &-laurel:before{
+    @include title-icon('../img/icon-laurel.svg');
+  }
+  &-heart:before{
+    @include title-icon('../img/icon-heart.svg');
+  }
+  &-hand:before{
+    @include title-icon('../img/icon-hand.svg');
+  }
+  &-home:before{
+    @include title-icon('../img/icon-home.svg');
+  }
+  &-stars:before{
+    @include title-icon('../img/icon-stars.svg');
+  }
+}
+
+.title-side-hat{
+  &:before{
+    background: url('../img/icon-hat.svg'); 
+    content:'';
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: top;
+  }
+}
+
+/*********************
+TITLE NEWSLETTER
+*********************/ 
+.title-mail{
+  margin-bottom: 20px;
+  text-align: center;
+  @include breakpoint(medium){
+    text-align: left;
+  }
+
+  &:before{
+    content:'';
+    display: block;
+    background: url(../img/icon-mail.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 60px;
+    height: 25px;
+    margin: 0 auto 10px;
+    
+    
+    @include breakpoint(medium){
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 0;
+      margin-right: 5px;
+    }
+  }
+}
+
+/*********************
+TITLE
+*********************/ 
+.title-bg-white{
+  display: block;
+  margin: 0;
+  padding: 10px;
+  background: $white;
+  @include breakpoint(medium){
+    display: inline-block;
+    width: 60%;
+    border-left: 1px solid $blue;
+    border-right: 1px solid $blue;
+    padding: 30px 40px;
+  }
+}
+
+/*********************
+SECTION TITLE
+*********************/ 
+
+.section-title{
+  &.main{
+    margin-top: 5em;
+    @include breakpoint(medium){
+      margin-top: 6em;
+    }
+  }
+  &.title-wave{
+    h2{
+      font-size: 2em;
+      line-height: 1;
+      color: $blue;
+      position: relative;
+      padding: 40px 20px;
+      display: inline-block;
+      &:after, &:before{
+        content: '';
+        -webkit-background-size: 100% 100%;
+        background-size: 100%;
+        background-repeat: repeat-x;
+        background-position: center;
+        background-image: url(../img/title-wave.svg);
+        height: 15px;
+        display: block;
+      }
+      &:before{
+        margin-bottom: 20px;
+      }
+      &:after{
+        margin-top: 20px;
+      }
+      @include breakpoint(medium){
+        padding: 60px 20px;
+        font-size: 3em;
+        line-height: 1;
+        &:before{
+          margin-bottom: 40px;
+        }
+        &:after{
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}

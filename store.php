@@ -1,5 +1,5 @@
 <?php
-  $page = "Articles";
+  $page = "Store";
   include('includes/header.php');
 ?>
 
@@ -14,7 +14,7 @@
             <!-- Video -->
             <div class="video-container-wave">
               <div class="responsive-embed widescreen">
-                <iframe width="500" height="281" src="https://www.youtube.com/embed/uKovEYt4tNA?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                <iframe width="500" height="281" src="https://www.youtube.com/embed/PcBNbbZV8aI?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
               </div>
             </div>
             <!-- /Video -->
@@ -23,14 +23,16 @@
 
 
           <div class="large-6 medium-10 cell">
-             <!-- Main -->
-             <div>
-              <h1 class="text-blue">Real-world guidance for real estate investing.</h1>
-              <p>Our mission is to show self-motivated people like you how to make great money from real estate, while helping others, minimizing risk, and creating more time for the things that matter.</p>
+
+            <!-- Main -->
+            <div>
+              <h1 class="text-blue">Save time & make more money with the right gear.</h1>
+              <p>Your time and effort go further when you’re equipped with the right things. These are the tools proven of high returns for investment, made available for purchase for you to leverage.</p>
             </div>
             <!-- /Main -->
 
-            <?php include('includes/newsletter.php');?>            
+            <?php include('includes/newsletter.php');?>
+
           </div>
 
         </div>
@@ -39,10 +41,9 @@
     </section>
     <!-- /Section Intro -->
    
-    <?php 
-      $article_title = "Sort articles by:";
-      include('includes/section-articles.php'); 
-    ?>
+    <?php include('includes/section-products.php'); ?>
+
+    <?php include('includes/section-club.php'); ?>
 
     <?php include('includes/section-subscribe.php'); ?>
 

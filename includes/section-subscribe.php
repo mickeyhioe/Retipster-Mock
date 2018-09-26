@@ -1,5 +1,10 @@
-    <!-- Section 5 -->
-    <section id="section-5" class="section-padding">
+<?php
+  if (!isset($padding)){
+    $padding ="section-padding";
+  }
+?>
+    <!-- Section Subscribe -->
+    <section id="section-subscribe" class="<?php echo $padding; ?>">
       <div class="grid-container">
         <div class="grid-x">
           <div class="small-12 cell">
@@ -24,4 +29,8 @@
         </div>
       </div>
     </section>
-    <!-- /Section 5 -->
+    <!-- /Section Subscribe -->
+
+<?php 
+  $padding = 'section-padding';
+?>

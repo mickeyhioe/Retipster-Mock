@@ -21,11 +21,27 @@
     }
     &.bg-green{
         background: $green;
+        border: 2px solid $green;
         color: $white;
-        border: none;
-      &:hover{
-        background: darken($green, 10%);
-        color: $white;
-      }
+        &:focus{
+            background: darken($green, 10%);
+            color: $white;
+        }
+        &:hover,
+        &:active{
+            background: $white;
+            color: $green;
+            border-color: $green;
+        }
+    }
+    &.outline{
+        background: $white;
+        border: 1px solid $blue;
+        color: $blue;
+        @include transition($transition);
+        &:hover{
+            background: $blue;
+            color: $white;
+        }
     }
 }

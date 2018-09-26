@@ -1,5 +1,10 @@
-    <!-- Section 4 -->
-    <section id="section-4" class="sawtooth-vertical bg-light-gray section-padding ">
+    <?php
+      if (!isset($article_title)){
+        $article_title ="Articles from our blog";
+      }
+    ?>
+    <!-- Section Articles -->
+    <section id="section-articles" class="sawtooth-vertical bg-light-gray section-padding ">
 
        <!-- Articles Nav -->
       <div class="grid-container">       
@@ -8,7 +13,7 @@
             <div class="grid-container">
               <div class="grid-x grid-padding-x box-wave align-middle">
                 <div class="large-6 cell">
-                  <h2 class="text-blue title-article">Articles from our blog</h2>
+                  <h2 class="text-blue title-article"><?php echo $article_title;?></h2>
                 </div>
                 <div class="large-6 cell">
                   <nav class="sort-articles-menu">
@@ -95,16 +100,16 @@
           <!-- Item -->
           <div class="article-grid-item cell <?php echo $cellsize;?>">
             <div class="article-grid-item-inner <?php echo $imgsize;?>">
-              <a href="#" class="img" style="background-image: url(https://picsum.photos/1200/800?image=<?php echo rand(600, 1000)?>);">
+              <a href="single.php" class="img" style="background-image: url(https://picsum.photos/1200/800?image=<?php echo rand(600, 1000)?>);">
                 <span class="cat-icon <?php echo $icon;?>"></span>
               </a>
               <div class="content">                
                 <div class="category"><?php echo $title;?></div>
                 <div class="title">
-                  <h3><a href="#">20 Life-Changing Books on Business, Real Estate and Personal Success</a></h3>
+                  <h3><a href="single.php">20 Life-Changing Books on Business, Real Estate and Personal Success</a></h3>
                 </div>
                 <div class="user">By: Seth Williams • <span class="span-reading-time"> 16 </span> min read </div>
-                  <a href="#" class="article-link"></a>
+                  <a href="single.php" class="article-link"></a>
                 </div>
               </div>
           </div>
@@ -119,7 +124,7 @@
 
       <div class="grid-container">
         <div class="grid-x grid-padding-x grid-padding-y grid-margin-y grid-margin-x align-center">
-          <a href="#" class="button large rounded">Go to our blog</a>
+          <a href="articles.php" class="button large rounded">Go to our blog</a>
         </div>
       </div>
 
@@ -198,4 +203,4 @@
       <!-- /Help Category -->
 
     </section>
-    <!-- /Section 4 -->
+    <!-- /Section Articles -->

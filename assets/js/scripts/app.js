@@ -84,8 +84,6 @@ $(document).ready(function() {
 
     // Mobile Menu
 	$('#open-menu').click(function() {
-		//$(this).toggleClass('active');
-		//$(this).parent().toggleClass('open');
 		$('#mobile-menu').toggleClass('open');
     });
 

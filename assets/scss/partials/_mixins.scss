@@ -372,3 +372,14 @@ $transition: all 0.3s ease-in-out;
   background-repeat: repeat;
   background-position: center center;
 }
+
+@mixin title-icon($icon){
+  background: url($icon);
+  content:'';
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 100px;
+  margin: 0 auto;
+}

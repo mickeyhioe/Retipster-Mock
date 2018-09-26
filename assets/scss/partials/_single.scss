@@ -1,0 +1,303 @@
+#single-column-wrapper {
+	margin-top: 20px;
+	@include breakpoint(medium){
+		margin-top: 0px;
+	}
+}
+
+.article-info {
+	border-bottom: 1px solid rgba(195, 203, 203, 1);
+	padding-bottom: 35px;
+	margin-bottom: 35px;
+}
+.article-info .author-image-name-popularity {
+	padding: 20px 10px 26px 4px;
+}					
+.grid-margin-x.author-image-name-popularity > .cell {
+	margin-left: .5375rem;
+	margin-right: .5375rem;
+}						
+.article-info .author-image-name-popularity .author-image img {
+	width: 71px;
+	height: auto;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}					
+.article-info .author-image-name-popularity .author-name h3 {
+	color: rgba(5, 75, 98, 1);
+	font-size: 1.1875em;
+	font-family: "aktivGrotesk Bold", sans-serif;
+	font-weight: 500;
+}
+.article-info .author-image-name-popularity .author-name .article-time {
+	font-size: 1em;
+	line-height: 1em;
+	color: rgba(130, 147, 159, 1);
+	display: block;
+}
+
+.article-info .author-image-name-popularity .author-follow a {
+	display: inline-block;
+	font-size: .9em;
+	line-height: 100%;
+	border: 1px solid rgba(0, 77, 104, 1);
+	border-radius: 5px;
+	padding: 1px 5px;
+	margin-left: 12px;
+	font-weight: 700;
+}
+.article-info .article-activity .activity-info.comments-info:before {
+	background-image: url(https://retipster.com/wp-content/themes/retipster/img/icons/comment.svg);
+	width: 26px;
+	height: 20px;
+	margin-top: -9px;
+	content: '';
+	background-size: contain;
+	background-position: center;
+	position: absolute;
+	top: 50%;
+	left: 17px;
+}
+.article-info .article-activity {
+	text-align: center;
+	@include breakpoint(medium){
+		text-align: right;
+	}
+}						
+.article-info .article-activity .activity-info {
+	display: inline-block;
+	font-size: 1em;
+	line-height: 105%;
+	font-weight: 600;						
+	position: relative;
+	border: 1px solid #054b62;
+	opacity: 1;    
+	transition: opacity .5s ease;
+	margin-left: 18px;
+	text-align: left;
+}					
+.article-info .article-activity .activity-info a {
+	color: inherit;
+	display: block;
+	padding-left: 54px;
+	padding-top: 11px;
+	padding-bottom: 10px;
+	padding-right: 17px;
+}
+.article-info .article-categories-info {
+	position: relative; padding-left: 68px;
+}
+.article-info .article-categories-info:before {
+	content: '';
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	background-image: url(https://retipster.com/wp-content/themes/retipster/img/icons/phone-no-bg.svg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	left: 10px;
+	top: -6px;
+}
+
+
+
+.article-content h2 {
+	color: rgba(44, 76, 97, 1);
+	padding-top: 20px;
+}
+
+.article-content img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	@include breakpoint(medium){
+		max-width: 100%;
+		width: auto;
+	}
+}
+.article-content iframe {
+	width: 100%;
+	height: 590px;
+	max-height: 33vw;
+}
+
+blockquote.alignright, figure.wp-caption.alignright, img.alignright {
+	margin: 7px 0 7px 24px;
+}
+.alignright {
+	float: right;
+}
+img {
+	vertical-align: middle;
+}
+
+
+
+.social-links {
+	text-align: center;
+	color: rgba(5, 75, 98, 1);	
+	margin-top: 60px;
+	border: 1px solid rgba(0, 77, 104, 1);
+	position: relative;
+	padding: 10px 20px 10px 20px;
+}
+					
+
+
+.article-about-author {
+	text-align: center;
+	color: rgba(5, 75, 98, 1);	
+	margin-top: 60px;
+	border: 1px solid rgba(0, 77, 104, 1);
+	position: relative;
+	padding: 30px 30px 60px 30px;
+}
+.article-about-author:after {
+	content: '';
+	background-image: url(https://retipster.com/wp-content/themes/retipster/img/waves/waves_bottom.svg);
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-position: center;
+	position: absolute;
+	height: 50px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid rgba(5, 75, 98, 1);
+}
+.article-about-author .author-image-name {
+	padding-bottom: 20px;
+}	
+.article-about-author .author-image-name > div:first-child {
+	text-align: right;
+}		
+.article-about-author .author-image-name > div:last-child {
+	text-align: left;
+}	
+.grid-margin-x.author-image-name > .cell {
+	margin-left: .5375rem;
+	margin-right: .5375rem;
+}						
+.article-about-author .author-image img {
+	width: 90px;
+	height: auto;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}					
+.article-about-author .author-image-name h3 {
+	color: rgba(5, 75, 98, 1);
+	font-size: 1.1875em;
+	font-family: "aktivGrotesk Bold", sans-serif;
+	font-weight: 500;
+	display: inline-block;
+	line-height: 26px;
+}
+.article-about-author .author-name a {
+	display: inline-block;
+	font-size: .9em;
+	line-height: 100%;
+	border: 1px solid rgba(0, 77, 104, 1);
+	border-radius: 5px;
+	padding: 1px 5px;
+	margin-left: 12px;
+	font-weight: 700;
+}
+
+
+
+.article-helpful {
+	margin-top: 52px;
+	margin-bottom: 30px;
+	border: 1px solid rgba(0, 77, 104, 1);
+	background-color: rgba(210, 233, 246, 1);
+	padding: 28px;
+	position: relative;
+	overflow: hidden;
+	@include breakpoint(medium){
+		margin-bottom: 0px;
+	}
+}					
+.article-helpful-buttons img {
+	width: 80%;
+	max-width: 83px;
+}
+.article-helpful-button:first-child {
+	text-align: right;
+}
+.article-helpful-button:last-child {
+	text-align: left;	
+}
+
+
+
+
+
+.article-sidebar-wrapper {	
+	@include breakpoint(medium){
+		padding-left: 18px;
+	}
+	.article-sidebar-item {
+		margin-bottom: 41px;
+		color: rgba(5, 75, 98, 1);
+		position: relative;
+		.sidebar-title {
+			h2 {
+				font-size: 2.25em;
+			}
+		}
+	}
+}
+.widgettitle {
+	text-align: center;
+}
+
+.subscribe-today {
+	text-align: center;
+	color: rgba(5, 75, 98, 1);	
+	border: 1px solid rgba(0, 77, 104, 1);
+	position: relative;
+	padding: 30px 30px 30px 30px;
+}
+.subscribe-today h3 {
+}
+.subscribe-today-message {
+	display: inline-block;
+	font-size: 1.2em;
+	padding: 18px 0px 20px 22px;
+}
+.subscribe-today form .button.rounded {
+	max-width: 260px;
+	min-width: 186px;
+	width: auto;
+	display: inline-block;
+	margin: 0px auto;
+}
+
+
+
+.sidebar-bio {
+	text-align: center;
+	color: rgba(5, 75, 98, 1);	
+	border: 1px solid rgba(0, 77, 104, 1);
+	position: relative;
+}
+.sidebar-bio-content {
+	text-align: center;
+	color: rgba(5, 75, 98, 1);
+	padding: 26px 20px 20px 20px;
+}
+.sidebar-bio-content .button {
+	background-color: rgba(54, 181, 194, 1);
+	border: 2px solid rgba(54, 181, 194, 1);
+}
+.sidebar-bio-content .button:focus, .sidebar-bio-content .button:hover {
+	background-color: #14679e;
+	color: #fefefe;
+}
+						 
+
+
+.related-articles-title-row {
+	height: 60px;	
+}
