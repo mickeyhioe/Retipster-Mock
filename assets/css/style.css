@@ -12077,102 +12077,117 @@ h2.title-article {
       margin: 0;
       font-size: 2em; } }
 
-.article-main-info {
+#single-column-wrapper {
+  margin-top: 20px; }
+  @media print, screen and (min-width: 40em) {
+    #single-column-wrapper {
+      margin-top: 0px; } }
+
+.article-info {
   border-bottom: 1px solid #c3cbcb;
   padding-bottom: 35px;
-  margin-bottom: 15px; }
-  .article-main-info .article-author {
-    padding-top: 35px; }
-    .article-main-info .article-author .author-main {
-      display: inline-block; }
-      .article-main-info .article-author .author-main .image {
-        display: inline-block;
-        float: left; }
-        .article-main-info .article-author .author-main .image img {
-          width: 71px;
-          height: auto;
-          border-radius: 50%; }
-      .article-main-info .article-author .author-main .name {
-        display: inline-block;
-        padding-left: 17px;
-        float: left;
-        margin-top: -5px; }
-        .article-main-info .article-author .author-main .name h3 {
-          color: #054b62;
-          font-size: 1.1875em;
-          font-weight: normal;
-          display: inline-block;
-          line-height: 26px; }
-        .article-main-info .article-author .author-main .name .time {
-          display: block;
-          font-size: 1.1875em;
-          line-height: 26px;
-          margin-top: -6px;
-          color: #82939f; }
-    .article-main-info .article-author .article-activity {
-      display: inline-block;
-      float: right;
-      margin-top: 9px;
-      position: relative;
-      overflow: hidden; }
-      .article-main-info .article-author .article-activity .activity-info {
-        display: inline-block;
-        font-size: 1.25em;
-        font-family: "aktivGrotesk Bold", sans-serif;
-        font-weight: 600;
-        color: #054b62;
-        position: relative;
-        border: 1px solid #054b62;
-        opacity: 1;
-        -webkit-transition: opacity .5s ease;
-        transition: opacity .5s ease; }
-        .article-main-info .article-author .article-activity .activity-info.comments-info {
-          margin-right: 15px; }
-          .article-main-info .article-author .article-activity .activity-info.comments-info:before {
-            background-image: url(https://retipster.com/wp-content/themes/retipster/img/icons/comment.svg);
-            width: 30px;
-            height: 22px;
-            margin-top: -9px;
-            content: '';
-            background-size: cover;
-            background-position: center;
-            position: absolute;
-            top: 50%;
-            left: 17px; }
-        .article-main-info .article-author .article-activity .activity-info a {
-          color: inherit;
-          display: block;
-          padding-left: 57px;
-          padding-top: 9px;
-          padding-bottom: 9px;
-          padding-right: 17px; }
-    .article-main-info .article-author .article-categories-info {
-      font-size: 1.1875em;
-      color: #82939f;
-      padding-left: 69px;
-      position: relative; }
-      .article-main-info .article-author .article-categories-info:before {
-        content: '';
-        position: absolute;
-        width: 44px;
-        height: 44px;
-        background-image: url(https://retipster.com/wp-content/themes/retipster/img/icons/phone-no-bg.svg);
-        background-size: cover;
-        background-position: center;
-        left: 10px;
-        top: 50%;
-        margin-top: -18px; }
-      .article-main-info .article-author .article-categories-info p {
-        padding-top: 8px; }
-        .article-main-info .article-author .article-categories-info p a {
-          font-size: 0.7em;
-          color: #0093cf;
-          -webkit-transition: color 0.4s ease;
-          transition: color 0.4s ease; }
+  margin-bottom: 35px; }
+
+.article-info .author-image-name-popularity {
+  padding: 20px 10px 26px 4px; }
+
+.grid-margin-x.author-image-name-popularity > .cell {
+  margin-left: .5375rem;
+  margin-right: .5375rem; }
+
+.article-info .author-image-name-popularity .author-image img {
+  width: 71px;
+  height: auto;
+  border-radius: 50%; }
+
+.article-info .author-image-name-popularity .author-name h3 {
+  color: #054b62;
+  font-size: 1.1875em;
+  font-family: "aktivGrotesk Bold", sans-serif;
+  font-weight: 500; }
+
+.article-info .author-image-name-popularity .author-name .article-time {
+  font-size: 1em;
+  line-height: 1em;
+  color: #82939f;
+  display: block; }
+
+.article-info .author-image-name-popularity .author-follow a {
+  display: inline-block;
+  font-size: .9em;
+  line-height: 100%;
+  border: 1px solid #004d68;
+  border-radius: 5px;
+  padding: 1px 5px;
+  margin-left: 12px;
+  font-weight: 700; }
+
+.article-info .article-activity .activity-info.comments-info:before {
+  background-image: url(https://retipster.com/wp-content/themes/retipster/img/icons/comment.svg);
+  width: 26px;
+  height: 20px;
+  margin-top: -9px;
+  content: '';
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 17px; }
+
+.article-info .article-activity {
+  text-align: center; }
+  @media print, screen and (min-width: 40em) {
+    .article-info .article-activity {
+      text-align: right; } }
+
+.article-info .article-activity .activity-info {
+  display: inline-block;
+  font-size: 1em;
+  line-height: 105%;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid #054b62;
+  opacity: 1;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+  margin-left: 18px;
+  text-align: left; }
+
+.article-info .article-activity .activity-info a {
+  color: inherit;
+  display: block;
+  padding-left: 54px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  padding-right: 17px; }
+
+.article-info .article-categories-info {
+  position: relative;
+  padding-left: 68px; }
+
+.article-info .article-categories-info:before {
+  content: '';
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  background-image: url(https://retipster.com/wp-content/themes/retipster/img/icons/phone-no-bg.svg);
+  background-size: cover;
+  background-position: center;
+  left: 10px;
+  top: -6px; }
+
+.article-content h2 {
+  color: #2c4c61;
+  padding-top: 20px; }
 
 .article-content img {
   max-width: 100%;
+  width: 100%;
   height: auto; }
+  @media print, screen and (min-width: 40em) {
+    .article-content img {
+      max-width: 100%;
+      width: auto; } }
 
 .article-content iframe {
   width: 100%;
@@ -12188,6 +12203,96 @@ blockquote.alignright, figure.wp-caption.alignright, img.alignright {
 img {
   vertical-align: middle; }
 
+.social-links {
+  text-align: center;
+  color: #054b62;
+  margin-top: 60px;
+  border: 1px solid #004d68;
+  position: relative;
+  padding: 10px 20px 10px 20px; }
+
+.article-about-author {
+  text-align: center;
+  color: #054b62;
+  margin-top: 60px;
+  border: 1px solid #004d68;
+  position: relative;
+  padding: 30px 30px 60px 30px; }
+
+.article-about-author:after {
+  content: '';
+  background-image: url(https://retipster.com/wp-content/themes/retipster/img/waves/waves_bottom.svg);
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #054b62; }
+
+.article-about-author .author-image-name {
+  padding-bottom: 20px; }
+
+.article-about-author .author-image-name > div:first-child {
+  text-align: right; }
+
+.article-about-author .author-image-name > div:last-child {
+  text-align: left; }
+
+.grid-margin-x.author-image-name > .cell {
+  margin-left: .5375rem;
+  margin-right: .5375rem; }
+
+.article-about-author .author-image img {
+  width: 90px;
+  height: auto;
+  border-radius: 50%; }
+
+.article-about-author .author-image-name h3 {
+  color: #054b62;
+  font-size: 1.1875em;
+  font-family: "aktivGrotesk Bold", sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  line-height: 26px; }
+
+.article-about-author .author-name a {
+  display: inline-block;
+  font-size: .9em;
+  line-height: 100%;
+  border: 1px solid #004d68;
+  border-radius: 5px;
+  padding: 1px 5px;
+  margin-left: 12px;
+  font-weight: 700; }
+
+.article-helpful {
+  margin-top: 52px;
+  margin-bottom: 30px;
+  border: 1px solid #004d68;
+  background-color: #d2e9f6;
+  padding: 28px;
+  position: relative;
+  overflow: hidden; }
+  @media print, screen and (min-width: 40em) {
+    .article-helpful {
+      margin-bottom: 0px; } }
+
+.article-helpful-buttons img {
+  width: 80%;
+  max-width: 83px; }
+
+.article-helpful-button:first-child {
+  text-align: right; }
+
+.article-helpful-button:last-child {
+  text-align: left; }
+
+@media print, screen and (min-width: 40em) {
+  .article-sidebar-wrapper {
+    padding-left: 18px; } }
+
 .article-sidebar-wrapper .article-sidebar-item {
   margin-bottom: 41px;
   color: #054b62;
@@ -12197,6 +12302,47 @@ img {
 
 .widgettitle {
   text-align: center; }
+
+.subscribe-today {
+  text-align: center;
+  color: #054b62;
+  border: 1px solid #004d68;
+  position: relative;
+  padding: 30px 30px 30px 30px; }
+
+.subscribe-today-message {
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 18px 0px 20px 22px; }
+
+.subscribe-today form .button.rounded {
+  max-width: 260px;
+  min-width: 186px;
+  width: auto;
+  display: inline-block;
+  margin: 0px auto; }
+
+.sidebar-bio {
+  text-align: center;
+  color: #054b62;
+  border: 1px solid #004d68;
+  position: relative; }
+
+.sidebar-bio-content {
+  text-align: center;
+  color: #054b62;
+  padding: 26px 20px 20px 20px; }
+
+.sidebar-bio-content .button {
+  background-color: #36b5c2;
+  border: 2px solid #36b5c2; }
+
+.sidebar-bio-content .button:focus, .sidebar-bio-content .button:hover {
+  background-color: #14679e;
+  color: #fefefe; }
+
+.related-articles-title-row {
+  height: 60px; }
 
 .button {
   font-family: "aktivGrotesk Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
