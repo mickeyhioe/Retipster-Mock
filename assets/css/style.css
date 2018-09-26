@@ -11446,9 +11446,10 @@ h5 {
 h6 {
   font-size: 1.15em; }
 
-@media screen and (min-width: 1024px) {
+@media print, screen and (min-width: 64em) {
   h1 {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    line-height: 1.1; }
   h2 {
     font-size: 2.15em; }
   h3 {
@@ -11460,7 +11461,7 @@ h6 {
   h6 {
     font-size: 1.25em; } }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 80em) {
   h1 {
     font-size: 3em; }
   h2 {
@@ -11521,6 +11522,9 @@ a {
     -webkit-transition: .3s linear all;
     transition: .3s linear all; }
 
+ul.list li {
+  margin-bottom: 10px; }
+
 .sawtooth-vertical {
   background-image: linear-gradient(135deg, #fff 50%, transparent 50%), linear-gradient(225deg, #fff 50%, transparent 50%), linear-gradient(45deg, #fff 50%, transparent 50%), linear-gradient(-45deg, #fff 50%, transparent 50%);
   background-position: top left, top left, bottom left, bottom left;
@@ -11545,19 +11549,19 @@ SECTION PADDING
 .section-padding {
   padding-top: 3em;
   padding-bottom: 3em; }
-  @media print, screen and (min-width: 40em) {
+  @media print, screen and (min-width: 64em) {
     .section-padding {
       padding-top: 6em;
       padding-bottom: 6em; } }
   .section-padding-top {
     padding-top: 3em;
     padding-bottom: 0; }
-    @media print, screen and (min-width: 40em) {
+    @media print, screen and (min-width: 64em) {
       .section-padding-top {
         padding-top: 6em; } }
     .section-padding-top-large {
       padding-top: 6em; }
-      @media print, screen and (min-width: 40em) {
+      @media print, screen and (min-width: 64em) {
         .section-padding-top-large {
           padding-top: 10em; } }
 
@@ -11633,17 +11637,20 @@ NEWSLETTER
   margin-top: 4em; }
 
 /*********************
-VIDEO CONTAINER
+VIDEO & IMAGE CONTAINER
 *********************/
-.video-container-wave {
+.video-container-wave,
+.image-container-wave {
   margin-top: 20px; }
   @media print, screen and (min-width: 40em) {
-    .video-container-wave {
+    .video-container-wave,
+    .image-container-wave {
       position: relative;
       margin-top: 40px;
       margin-right: 40px;
       margin-bottom: 60px; }
-      .video-container-wave:after {
+      .video-container-wave:after,
+      .image-container-wave:after {
         content: '';
         display: block;
         position: absolute;
@@ -11656,11 +11663,65 @@ VIDEO CONTAINER
         background-repeat: repeat;
         background-position: center center; } }
   @media print, screen and (min-width: 64em) {
-    .video-container-wave {
+    .video-container-wave,
+    .image-container-wave {
       margin-bottom: 0; } }
   @media screen and (min-width: 80em) {
-    .video-container-wave {
+    .video-container-wave,
+    .image-container-wave {
       margin-left: -40px; } }
+
+.image-container-layer {
+  position: relative;
+  padding-bottom: 40%; }
+  .image-container-layer.padding-bottom-normal {
+    padding-bottom: 20px; }
+  @media print, screen and (min-width: 40em) {
+    .image-container-layer {
+      padding-bottom: 30%; } }
+  @media print, screen and (min-width: 64em) {
+    .image-container-layer {
+      padding-bottom: 20%; } }
+  .image-container-layer .image-foreground {
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+    -kthtml-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .image-container-layer .image-foreground.couple {
+      width: 50%;
+      max-width: 300px;
+      height: auto;
+      top: 20%;
+      left: 25%; }
+      @media screen and (min-width: 80em) {
+        .image-container-layer .image-foreground.couple {
+          left: 18%; } }
+    .image-container-layer .image-foreground.working {
+      width: 60%;
+      max-width: 340px;
+      height: auto;
+      top: 25%;
+      left: 20%; }
+      @media print, screen and (min-width: 64em) {
+        .image-container-layer .image-foreground.working {
+          top: 40%;
+          left: 15%; } }
+  .image-container-layer .image-background {
+    background: #36b5c2;
+    padding: 30px;
+    text-align: center; }
+  .image-container-layer .image-rounded {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px; }
+    @media print, screen and (min-width: 40em) {
+      .image-container-layer .image-rounded {
+        width: 250px;
+        height: 250px; } }
+    @media print, screen and (min-width: 64em) {
+      .image-container-layer .image-rounded {
+        width: 300px;
+        height: 300px; } }
 
 /*********************
 NAVIGATION
@@ -12723,6 +12784,26 @@ TITLE ICON
 
 .title-hand:before {
   background: url("../img/icon-hand.svg");
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 100px;
+  margin: 0 auto; }
+
+.title-home:before {
+  background: url("../img/icon-home.svg");
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 100px;
+  margin: 0 auto; }
+
+.title-stars:before {
+  background: url("../img/icon-stars.svg");
   content: '';
   display: block;
   background-repeat: no-repeat;

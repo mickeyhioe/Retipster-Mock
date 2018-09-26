@@ -56,7 +56,7 @@
 
                     <!-- Start Here -->
                     <div class="menu-start">
-                      <a href="#" class="button bg-green">Start here</a>
+                      <a href="start-here.php" class="button bg-green">Start here</a>
                     </div>
                     <!-- /Start Here -->
 

@@ -1,5 +1,10 @@
+<?php
+  if (!isset($padding)){
+    $padding ="section-padding";
+  }
+?>
     <!-- Section E-book -->
-    <section id="section-ebook" class="section-padding">
+    <section id="section-ebook" class="<?php echo $padding; ?>">
       <div class="grid-container">
         <div class="grid-x">
           <div class="large-12 cell">
@@ -33,3 +38,7 @@
       </div>
     </section>
     <!-- /Section E-Book -->
+
+<?php 
+  $padding = 'section-padding';
+?>

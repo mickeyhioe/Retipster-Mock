@@ -15,6 +15,12 @@ TITLE ICON
   &-hand:before{
     @include title-icon('../img/icon-hand.svg');
   }
+  &-home:before{
+    @include title-icon('../img/icon-home.svg');
+  }
+  &-stars:before{
+    @include title-icon('../img/icon-stars.svg');
+  }
 }
 
 /*********************

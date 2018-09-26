@@ -52,6 +52,12 @@ a{
   }
 }
 
+ul.list{
+  li{
+    margin-bottom: 10px;
+  }
+}
+
 .sawtooth-vertical {
   @include saw-tooth-vertical();
 }
@@ -70,19 +76,19 @@ SECTION PADDING
 .section-padding{
   padding-top: 3em;
   padding-bottom: 3em;
-  @include breakpoint(medium){
+  @include breakpoint(large){
     padding-top: 6em;
     padding-bottom: 6em;
   }
   &-top{
     padding-top: 3em;
     padding-bottom: 0;
-    @include breakpoint(medium){
+    @include breakpoint(large){
       padding-top: 6em;
     }
     &-large{
       padding-top: 6em;
-      @include breakpoint(medium){
+      @include breakpoint(large){
         padding-top: 10em;
       }
     }
@@ -173,9 +179,10 @@ NEWSLETTER
 }
 
 /*********************
-VIDEO CONTAINER
+VIDEO & IMAGE CONTAINER
 *********************/ 
-.video-container-wave{  
+.video-container-wave,
+.image-container-wave{  
   margin-top: 20px;
   @include breakpoint(medium){
     position: relative;
@@ -199,5 +206,65 @@ VIDEO CONTAINER
   }
   @include breakpoint(xlarge){
     margin-left: -40px;
+  }
+}
+
+
+.image-container-layer{  
+  position: relative;
+  padding-bottom: 40%;
+  &.padding-bottom-normal{
+    padding-bottom: 20px;
+  }
+  @include breakpoint(medium){
+    padding-bottom: 30%;
+  }
+  @include breakpoint(large){
+    padding-bottom: 20%;
+  }
+  .image-foreground{
+    position: absolute;
+    @include transition($transition);
+    &.couple{
+      width: 50%;
+      max-width: 300px;
+      height: auto;
+      top: 20%;
+      left: 25%;
+      @include breakpoint(xlarge){
+        left: 18%;
+      }
+    }
+    &.working{
+      width: 60%;
+      max-width: 340px;
+      height: auto;
+      top: 25%;
+      left: 20%;
+      @include breakpoint(large){
+        top: 40%;
+        left: 15%;
+      }
+    }
+  }
+
+  .image-background {
+    //padding-top: 58%;
+    background: $teal;
+    padding: 30px;
+    text-align: center;
+  }
+  .image-rounded{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    @include breakpoint(medium){
+      width: 250px;
+      height: 250px;
+    }
+    @include breakpoint(large){
+      width: 300px;
+      height: 300px;
+    }
   }
 }
