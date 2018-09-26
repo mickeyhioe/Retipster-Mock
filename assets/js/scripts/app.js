@@ -39,10 +39,10 @@ $(document).ready(function() {
 
     function hasScrolled() {
         var st = $(this).scrollTop();
-        
+
         if(Math.abs(lastScrollTop - st) <= delta)
             return;
-        
+
         if (st > lastScrollTop && st > navbarHeight){
             // Scroll Down
             $('header').removeClass('nav-down').addClass('nav-up');
@@ -52,10 +52,19 @@ $(document).ready(function() {
                 $('header').removeClass('nav-up').addClass('nav-down');
             }
         }
-        
+
         lastScrollTop = st;
     }
-    
+
+    //stickySidebar
+    if($(window).width()>=1024){
+        $('.sidebar').stickySidebar({
+            containerSelector: '.grid-x.grid-padding-x',
+            innerWrapperSelector: '.sidebar__inner',
+            topSpacing: 40
+        });
+    }
+
     // Scroll to Top
     toggleButton();
     $(window).scroll(toggleButton);
@@ -92,5 +101,8 @@ $(document).ready(function() {
     $('#close-search').click(function() {
 		$('#search-menu').toggleClass('open');
     });
-    
+
 });
+
+
+
