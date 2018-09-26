@@ -23,6 +23,20 @@ TITLE ICON
   }
 }
 
+.title-side-hat{
+  &:before{
+    background: url('../img/icon-hat.svg'); 
+    content:'';
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: top;
+  }
+}
+
 /*********************
 TITLE NEWSLETTER
 *********************/ 

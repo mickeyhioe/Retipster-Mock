@@ -12,7 +12,7 @@
             </div>
 
             <!-- Products -->
-            <div class="products grid-x large-up-5 medium-up-2 small-up-2 box-wave" data-equalizer="content" >
+            <div class="products grid-x large-up-5 medium-up-2 small-up-1 box-wave" data-equalizer="content" >
               <?php
                 $products = array(
                   array(

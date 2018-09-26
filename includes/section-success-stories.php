@@ -16,7 +16,10 @@
                   <h2 class="text-blue title-article"><?php echo $article_title;?></h2>
                 </div>
                 <div class="large-6 cell">
-                  <a href="#" class="button large rounded">Take me to the blog</a>
+                  <div class="button-container-article flex-container align-middle">
+                    <h3 class="h5 title-side-hat flex-child-auto">Want to learn more? </h3>
+                    <a href="#" class="button rounded flex-child-auto">Take me to the blog</a>
+                  </div>
                 </div>
               </div>
             </div>

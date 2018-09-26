@@ -11981,6 +11981,9 @@ MOBILE MENU
     width: 25px;
     height: auto; }
 
+/*********************
+ARTICLES
+*********************/
 .article-grid {
   margin-top: 40px;
   margin-bottom: 40px; }
@@ -12067,6 +12070,9 @@ MOBILE MENU
           left: 30px;
           bottom: 20px; } }
 
+/*********************
+ARTICLES NAVIGATION BAR
+*********************/
 h2.title-article {
   font-size: 1.6em;
   text-align: center;
@@ -12076,6 +12082,11 @@ h2.title-article {
       text-align: left;
       margin: 0;
       font-size: 2em; } }
+
+.button-container-article {
+  padding: 10px 0; }
+  .button-container-article .button {
+    margin: 0; }
 
 #single-column-wrapper {
   margin-top: 20px; }
@@ -12741,12 +12752,9 @@ PRODUCTS
   background: white;
   display: block;
   position: relative;
-  border-right: 1px solid #2c4c61;
   border-bottom: 1px solid #2c4c61;
   padding: 50px 20px; }
-  .products-item:nth-of-type(even) {
-    border-right: none; }
-  .products-item:last-of-type, .products-item:nth-last-of-type(2) {
+  .products-item:last-of-type {
     border-bottom: none; }
   .products-item:after {
     content: '';
@@ -12772,6 +12780,13 @@ PRODUCTS
     border-bottom-color: #e54941; }
   .products-item.triangle-dark-blue:after {
     border-bottom-color: #2043b2; }
+  @media print, screen and (min-width: 40em) {
+    .products-item {
+      border-right: 1px solid #2c4c61; }
+      .products-item:nth-of-type(even) {
+        border-right: none; }
+      .products-item:nth-last-of-type(2) {
+        border-bottom: none; } }
   @media print, screen and (min-width: 64em) {
     .products-item:nth-of-type(even) {
       border-right: 1px solid #2c4c61; }
@@ -12957,6 +12972,17 @@ TITLE ICON
   width: 120px;
   height: 100px;
   margin: 0 auto; }
+
+.title-side-hat:before {
+  background: url("../img/icon-hat.svg");
+  content: '';
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 30px;
+  margin-right: 5px;
+  vertical-align: top; }
 
 /*********************
 TITLE NEWSLETTER

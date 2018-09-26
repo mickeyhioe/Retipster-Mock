@@ -6,14 +6,9 @@ PRODUCTS
     background: $white;
     display: block;    
     position: relative;
-    border-right: 1px solid $blue;
     border-bottom: 1px solid $blue;
     padding: 50px 20px;
-    &:nth-of-type(even){
-      border-right: none;
-    }
-    &:last-of-type,
-    &:nth-last-of-type(2){
+    &:last-of-type{
       border-bottom: none;
     }
     &:after{
@@ -49,6 +44,15 @@ PRODUCTS
       }
       &-dark-blue:after{
         border-bottom-color: $dark-blue;
+      }
+    }
+    @include breakpoint(medium){
+      border-right: 1px solid $blue;
+      &:nth-of-type(even){
+        border-right: none;
+      }
+      &:nth-last-of-type(2){
+        border-bottom: none;
       }
     }
     @include breakpoint(large){
