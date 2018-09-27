@@ -2,15 +2,17 @@
 ARTICLE INFO
 *********************/
 .article-info {
-	border-bottom: 1px solid $light-gray;
-	padding-bottom: 20px;
 	margin-bottom: 20px;
 	@include breakpoint($medium){
 		padding-bottom: 35px;
 		margin-bottom: 35px;
+		border-bottom: 1px solid $light-gray;
 	}
 	.author-image-name-popularity {
-		padding: 20px 0;
+		padding: 10px 0 20px;
+		@include breakpoint($medium){
+			padding: 20px 0;
+		}
 		.author-image{
 			margin-right: 10px;
 			@include breakpoint($medium){
@@ -24,21 +26,6 @@ ARTICLE INFO
 				@include breakpoint($medium){
 					width: 70px;
 				}
-			}
-		}
-		.author-name{
-			h3 {
-				color: $blue;
-				font-size: 1.1875em;
-				display: block;
-				@include breakpoint($medium){
-					display: inline-block;
-				}
-			}
-			.article-time {
-				font-size: 1em;
-				color: $medium-gray;
-				display: block;
 			}
 		}
 	}
@@ -82,15 +69,34 @@ ARTICLE INFO
 }
 
 /*********************
+AUTHOR NAME
+*********************/
+.author-name{
+	.name {
+		color: $blue;
+		font-family: $proximanova_bold;
+		display: block;
+		@include breakpoint($medium){
+			display: inline-block;
+		}
+	}
+	.article-time {
+		font-size: .9em;
+		color: $medium-gray;
+		display: block;
+	}
+}
+
+/*********************
 BUTTON FOLLOW
 *********************/
 
 .button-follow{
 	display: inline-block;
-	font-size: .9em;
+	font-size: .75em;
 	border: 1px solid $blue;
 	border-radius: 5px;
-	padding: 3px 10px;
+	padding: 2px 5px;
 	margin-left: 12px;
 	font-family: $activgrotesk;
 	&:before{
@@ -157,23 +163,23 @@ ARTICLE CONTENT
 	}
 
 	h1,.h1{
-		font-size: 2.25em;
-	}
-
-	h2, .h2{
 		font-size: 2em;
 	}
 
-	h3, .h3{
+	h2, .h2{
 		font-size: 1.75em;
 	}
 
-	h4, .h4{
+	h3, .h3{
 		font-size: 1.5em;
 	}
 
-	h5, .h5{
+	h4, .h4{
 		font-size: 1.25em;
+	}
+
+	h5, .h5{
+		font-size: 1.1em;
 	}
 
 	h6, .h6{
@@ -181,7 +187,38 @@ ARTICLE CONTENT
 	}
 
 	li, p{
-		font-size: 1.1em;
+		font-size: 1em;
+	}
+
+	@include breakpoint(medium){
+		h1,.h1{
+			font-size: 2.25em;
+		}
+	
+		h2, .h2{
+			font-size: 2em;
+		}
+	
+		h3, .h3{
+			font-size: 1.75em;
+		}
+	
+		h4, .h4{
+			font-size: 1.5em;
+		}
+	
+		h5, .h5{
+			font-size: 1.25em;
+		}
+	
+		h6, .h6{
+			font-size: 1em;
+		}
+	
+		li, p{
+			font-size: 1.1em;
+		}
+
 	}
 
 	p, ul, ol{
@@ -215,6 +252,9 @@ ARTICLE CONTENT
 		}
 		&.alignleft{
 			margin: 10px 25px 25px 0;
+		}
+		&.aligncenter{
+			margin: 10px 10px 25px;
 		}
 		@include breakpoint(medium){
 			&.alignleft,
@@ -266,8 +306,8 @@ SOCIAL LINKS
 *********************/
 .social-links {
 	text-align: center;
-	color: rgba(5, 75, 98, 1);	
-	border: 1px solid rgba(0, 77, 104, 1);
+	color: $blue;
+	border: 1px solid $blue;
 	position: relative;
 	padding: 10px 20px 10px 20px;
 }
@@ -287,6 +327,9 @@ ABOUT AUTHOR
 		}
 	}
 	
+	.author-name{
+		padding-top: 10px;
+	}
 	.author-image-name {
 		padding-bottom: 20px;
  		> div{
@@ -296,12 +339,6 @@ ABOUT AUTHOR
 			&:last-child {
 				text-align: left;
 			}
-		}
-		h3 {
-			color: $blue;
-			font-size: 1.1875em;
-			display: inline-block;
-			line-height: 26px;
 		}
 	}
 }
@@ -369,14 +406,9 @@ SIDEBAR WRAPPER
 		margin-top: 0;
 	}
 	.article-sidebar-item {
-		margin-bottom: 41px;
-		color: rgba(5, 75, 98, 1);
+		margin-bottom: 40px;
 		position: relative;
-		.sidebar-title {
-			h2 {
-				font-size: 2.25em;
-			}
-		}
+		
 	}
 }
 .widgettitle {
@@ -389,13 +421,9 @@ SUBSCRIBE TODAY
 
 .subscribe-today {
 	text-align: center;
-	color: rgba(5, 75, 98, 1);	
-	border: 1px solid rgba(0, 77, 104, 1);
+	border: 1px solid $blue;
 	position: relative;
 	padding: 30px 30px 30px 30px;
-	h3{
-
-	}
 	&-message {
 		display: inline-block;
 		font-size: 1.2em;
@@ -419,7 +447,7 @@ SIDEBAR BIO
 .sidebar-bio {
 	text-align: center;
 	color: $blue;	
-	border: 1px solid rgba(0, 77, 104, 1);
+	border: 1px solid $blue;
 	position: relative;
 	&-content {
 		text-align: center;

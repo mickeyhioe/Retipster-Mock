@@ -11663,6 +11663,9 @@ UTILITY
 .rounded {
   border-radius: 50px; }
 
+.no-wrap {
+  white-space: nowrap !important; }
+
 .bg-white-transparent {
   background: rgba(255, 255, 255, 0.75);
   position: absolute;
@@ -11850,6 +11853,19 @@ nav.sort-articles-menu .menu {
         nav.sort-articles-menu .menu li a {
           font-size: 1.2em;
           padding: .7rem 1rem; } }
+  nav.sort-articles-menu .menu.underline {
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center; }
+    nav.sort-articles-menu .menu.underline li {
+      border: none;
+      padding-left: .4rem;
+      padding-right: .4rem; }
+      nav.sort-articles-menu .menu.underline li.active a {
+        border-bottom: 4px solid #3d92cc; }
+      nav.sort-articles-menu .menu.underline li a {
+        padding: .5rem 0;
+        font-size: 1em; }
 
 /*********************
 BURGER MENU
@@ -12137,15 +12153,17 @@ CATEGORY ICON
 ARTICLE INFO
 *********************/
 .article-info {
-  border-bottom: 1px solid #dfe4e7;
-  padding-bottom: 20px;
   margin-bottom: 20px; }
   @media screen and (min-width: 48em) {
     .article-info {
       padding-bottom: 35px;
-      margin-bottom: 35px; } }
+      margin-bottom: 35px;
+      border-bottom: 1px solid #dfe4e7; } }
   .article-info .author-image-name-popularity {
-    padding: 20px 0; }
+    padding: 10px 0 20px; }
+    @media screen and (min-width: 48em) {
+      .article-info .author-image-name-popularity {
+        padding: 20px 0; } }
     .article-info .author-image-name-popularity .author-image {
       margin-right: 10px; }
       @media screen and (min-width: 48em) {
@@ -12158,17 +12176,6 @@ ARTICLE INFO
         @media screen and (min-width: 48em) {
           .article-info .author-image-name-popularity .author-image img {
             width: 70px; } }
-    .article-info .author-image-name-popularity .author-name h3 {
-      color: #2c4c61;
-      font-size: 1.1875em;
-      display: block; }
-      @media screen and (min-width: 48em) {
-        .article-info .author-image-name-popularity .author-name h3 {
-          display: inline-block; } }
-    .article-info .author-image-name-popularity .author-name .article-time {
-      font-size: 1em;
-      color: #82939f;
-      display: block; }
   .article-info .article-activity {
     text-align: center; }
     @media print, screen and (min-width: 40em) {
@@ -12195,14 +12202,30 @@ ARTICLE INFO
       border-bottom-color: #3d92cc; }
 
 /*********************
+AUTHOR NAME
+*********************/
+.author-name .name {
+  color: #2c4c61;
+  font-family: "Proxima Nova Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  display: block; }
+  @media screen and (min-width: 48em) {
+    .author-name .name {
+      display: inline-block; } }
+
+.author-name .article-time {
+  font-size: .9em;
+  color: #82939f;
+  display: block; }
+
+/*********************
 BUTTON FOLLOW
 *********************/
 .button-follow {
   display: inline-block;
-  font-size: .9em;
+  font-size: .75em;
   border: 1px solid #2c4c61;
   border-radius: 5px;
-  padding: 3px 10px;
+  padding: 2px 5px;
   margin-left: 12px;
   font-family: "aktivGrotesk Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
   .button-follow:before {
@@ -12256,25 +12279,41 @@ ARTICLE CONTENT
   color: #2c4c61; }
 
 .article-content h1, .article-content .h1 {
-  font-size: 2.25em; }
-
-.article-content h2, .article-content .h2 {
   font-size: 2em; }
 
-.article-content h3, .article-content .h3 {
+.article-content h2, .article-content .h2 {
   font-size: 1.75em; }
 
-.article-content h4, .article-content .h4 {
+.article-content h3, .article-content .h3 {
   font-size: 1.5em; }
 
-.article-content h5, .article-content .h5 {
+.article-content h4, .article-content .h4 {
   font-size: 1.25em; }
+
+.article-content h5, .article-content .h5 {
+  font-size: 1.1em; }
 
 .article-content h6, .article-content .h6 {
   font-size: 1em; }
 
 .article-content li, .article-content p {
-  font-size: 1.1em; }
+  font-size: 1em; }
+
+@media print, screen and (min-width: 40em) {
+  .article-content h1, .article-content .h1 {
+    font-size: 2.25em; }
+  .article-content h2, .article-content .h2 {
+    font-size: 2em; }
+  .article-content h3, .article-content .h3 {
+    font-size: 1.75em; }
+  .article-content h4, .article-content .h4 {
+    font-size: 1.5em; }
+  .article-content h5, .article-content .h5 {
+    font-size: 1.25em; }
+  .article-content h6, .article-content .h6 {
+    font-size: 1em; }
+  .article-content li, .article-content p {
+    font-size: 1.1em; } }
 
 .article-content p, .article-content ul, .article-content ol {
   margin-bottom: 1.5rem; }
@@ -12304,6 +12343,11 @@ ARTICLE CONTENT
 .article-content figure.wp-caption.alignleft,
 .article-content img.alignleft {
   margin: 10px 25px 25px 0; }
+
+.article-content blockquote.aligncenter,
+.article-content figure.wp-caption.aligncenter,
+.article-content img.aligncenter {
+  margin: 10px 10px 25px; }
 
 @media print, screen and (min-width: 40em) {
   .article-content blockquote.alignleft, .article-content blockquote.alignright,
@@ -12350,8 +12394,8 @@ SOCIAL LINKS
 *********************/
 .social-links {
   text-align: center;
-  color: #054b62;
-  border: 1px solid #004d68;
+  color: #2c4c61;
+  border: 1px solid #2c4c61;
   position: relative;
   padding: 10px 20px 10px 20px; }
 
@@ -12364,17 +12408,14 @@ ABOUT AUTHOR
     width: 80px;
     height: auto;
     border-radius: 50%; }
+  .article-about-author .author-name {
+    padding-top: 10px; }
   .article-about-author .author-image-name {
     padding-bottom: 20px; }
     .article-about-author .author-image-name > div:first-child {
       text-align: right; }
     .article-about-author .author-image-name > div:last-child {
       text-align: left; }
-    .article-about-author .author-image-name h3 {
-      color: #2c4c61;
-      font-size: 1.1875em;
-      display: inline-block;
-      line-height: 26px; }
 
 /*********************
 ADDITIONAL INFO
@@ -12428,11 +12469,8 @@ SIDEBAR WRAPPER
       padding-left: 20px;
       margin-top: 0; } }
   .article-sidebar-wrapper .article-sidebar-item {
-    margin-bottom: 41px;
-    color: #054b62;
+    margin-bottom: 40px;
     position: relative; }
-    .article-sidebar-wrapper .article-sidebar-item .sidebar-title h2 {
-      font-size: 2.25em; }
 
 .widgettitle {
   text-align: center; }
@@ -12442,8 +12480,7 @@ SUBSCRIBE TODAY
 *********************/
 .subscribe-today {
   text-align: center;
-  color: #054b62;
-  border: 1px solid #004d68;
+  border: 1px solid #2c4c61;
   position: relative;
   padding: 30px 30px 30px 30px; }
   .subscribe-today-message {
@@ -12463,7 +12500,7 @@ SIDEBAR BIO
 .sidebar-bio {
   text-align: center;
   color: #2c4c61;
-  border: 1px solid #004d68;
+  border: 1px solid #2c4c61;
   position: relative; }
   .sidebar-bio-content {
     text-align: center;
@@ -13658,7 +13695,8 @@ ACCORDION
     border-bottom: 1px solid #2c4c61; }
   .accordion .accordion-item > .accordion-title {
     color: #2c4c61;
-    border-color: #2c4c61; }
+    border-color: #2c4c61;
+    padding: 1rem 2rem; }
     .accordion .accordion-item > .accordion-title h3 {
       margin-bottom: 0; }
     .accordion .accordion-item > .accordion-title:before {
@@ -13695,10 +13733,29 @@ POPULAR POSTS
 .popular-posts-item .post-content {
   display: block;
   padding: 20px;
-  border-bottom: 1px solid #dfe4e7; }
+  border-bottom: 1px solid #dfe4e7;
+  position: relative; }
+  .popular-posts-item .post-content-bg {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -kthtml-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .popular-posts-item .post-content .post-title {
+    margin-bottom: 1em; }
   .popular-posts-item .post-content:hover {
-    background: #2c4c61; }
+    background-color: rgba(44, 76, 97, 0.8); }
     .popular-posts-item .post-content:hover .post-title,
     .popular-posts-item .post-content:hover .post-user,
     .popular-posts-item .post-content:hover .post-category {
       color: white; }
+    .popular-posts-item .post-content:hover .post-content-bg {
+      opacity: .5; }

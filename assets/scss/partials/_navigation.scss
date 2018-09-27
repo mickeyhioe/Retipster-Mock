@@ -87,8 +87,25 @@ nav{
                     }
                 }
             }
+            &.underline{
+                -ms-flex-pack: center;
+                justify-content: center;
+                li{
+                    border: none;
+                    padding-left: .4rem;
+                    padding-right: .4rem;
+                    &.active{
+                        a{
+                            border-bottom: 4px solid $medium-blue;
+                        }
+                    }
+                    a{
+                        padding: .5rem 0;
+                        font-size: 1em;
+                    }
+                }
+            }    
         }
-
     }
 }
 

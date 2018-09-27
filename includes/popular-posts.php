@@ -22,6 +22,7 @@
 
     <div class="popular-posts-item">
         <a href="single.php" class="post-content">
+            <div class="post-content-bg" style="background-image: url(https://picsum.photos/600/300?image=<?php echo rand(600, 1000)?>);"></div>
             <span class="post-category"><?php echo $category;?></span>
             <span class="h5 post-title"><?php echo $title;?></span>
             <span class="post-user">By: Seth Williams • <span class="span-reading-time"> 11 </span> min read</span>

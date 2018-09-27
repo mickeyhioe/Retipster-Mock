@@ -24,12 +24,17 @@
                   <div class="grid-x author-image-name-popularity align-middle">
 
                     <div class="shrink cell author-image">
-                      <img src="https://retipster.com/wp-content/uploads/2017/12/c4d54185ced7502c4c883d83da1f1a16.png" />
+                      <a href="#">
+                        <img src="https://retipster.com/wp-content/uploads/2017/12/c4d54185ced7502c4c883d83da1f1a16.png" />
+                      </a>
                     </div>
 
-                    <div class="shrink cell author-name">
-                      <h3>Seth Williams</h3> 
-                      <span class="article-time">5 min read</span>
+                    <div class="shrink cell author-name no-wrap">
+                      <div class="flex-container">
+                        <a href="#" class="name">Seth Williams</a>
+                        <div><a href="#" class="button-follow">Follow</a></div>
+                      </div>
+                      <span class="article-time ">5 min read</span>
                     </div>
 
                   </div>    
@@ -181,14 +186,17 @@
             <!-- About the Author -->          
             <div class="grid-y article-about-author box-wave align-center section-margin-top">
               <div class="padding-3">
-                <h3 class="h2 text-blue">About the author</h3>
+                <h2 class="text-blue">About the author</h3>
                   
                 <div class="grid-x grid-margin-x author-image-name align-center align-middle">
                   <div class="shrink cell author-image">
                     <img src="https://retipster.com/wp-content/uploads/2017/12/c4d54185ced7502c4c883d83da1f1a16.png" />
                   </div>
-                  <div class="shrink cell author-name">
-                    <h3>Seth Williams</h3><a href="#" class="button-follow">Follow</a>
+                  <div class="shrink cell author-name no-wrap">
+                    <div class="flex-container">
+                      <a href="#" class="name">Seth Williams</a>
+                      <div><a href="#" class="button-follow">Follow</a></div>
+                    </div>
                   </div>
                 </div>
 
@@ -238,8 +246,8 @@
               <div class="widget article-sidebar-item">
 
                 <div class="grid-y subscribe-today ">
-                  <h3>Subscribe today!</h3>                  
-                  <span class="subscribe-today-message text-gray title-mail">Get all the latest news!</span>
+                  <h3 class="text-blue">Subscribe today!</h3>                  
+                  <span class="text-gray h6 title-mail">Get all the latest news!</span>
                                               
                   <form action="https://www.getdrip.com/forms/5100474/submissions" method="post" data-drip-embedded-form="5100474">
                     <div class="grid-container padding-0">
@@ -266,14 +274,30 @@
                   <div class="sidebar-bio-content">
                     <h3>I'm Seth Williams.</h3>
                     <p>I founded REtipster to share with you the lessons I learned on my journey to real estate investing success, which led to REtipster's mission: to empower others to build their own personal and financial freedom.</p>
-                      <a href="#" class="button large rounded bg-teal">Learn more</a>
+                      <a href="#" class="button large rounded bg-green">Learn more</a>
                   </div>                    
                 </div>
               </div>
               <!-- /Widget -->                        
                           
               <!-- Widget -->
-              <div class="widget article-sidebar-item">                        	
+              <div class="widget article-sidebar-item"> 
+                
+                <div class="grid-y sidebar-popular-posts">
+                  <div class="cell text-center">
+                    <h3 class="text-blue">Popular Posts</h3>
+                  </div>
+                  <div class="cell text-center">
+                    <nav class="sort-articles-menu">
+                      <ul class="menu underline">
+                        <li class="active"><a href="#">Recent</a></li>
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Trending</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <?php include('includes/popular-posts.php');?>
+                </div>
                   
               </div>
               <!-- /Widget --> 

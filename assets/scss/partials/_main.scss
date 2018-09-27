@@ -197,6 +197,10 @@ UTILITY
   border-radius: 50px;
 }
 
+.no-wrap{
+  white-space: nowrap!important;
+}
+
 .bg-white-transparent{
   background: rgba(255,255,255,.75);
   position: absolute;
