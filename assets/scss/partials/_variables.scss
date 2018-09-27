@@ -15,7 +15,7 @@ $dark-blue  : rgba(32, 67, 178, 1);
 $red        : rgba(229, 73, 65, 1);
 $yellow     : rgba(255, 204, 0, 1);
 $orange     : rgba(249, 141, 43, 1);
-$teal       : rgba(54, 181, 194, 1);
+$teal       : rgba(0, 182, 196, 1);
 
 
 $size__site-main: 100%;
@@ -33,10 +33,12 @@ $gutter: 4%;
 // Fonts
 @include fontface('aktivGrotesk Bold', '../fonts/aktivGrotesk', 'AktivGrotesk-Bold');
 @include fontface('aktivGrotesk Light', '../fonts/aktivGrotesk', 'AktivGrotesk-Light');
+@include fontface('aktivGrotesk Regular', '../fonts/aktivGrotesk', 'AktivGrotesk-Regular');
 @include fontface('Proxima Nova Extra Bold', '../fonts/proximaNova', 'ProximaNova-Extrabld');
 @include fontface('Proxima Nova Bold', '../fonts/proximaNova', 'ProximaNova-Bold');
 
-$activgrotesk_light : "aktivGrotesk Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+$activgrotesk_light : "aktivGrotesk Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$activgrotesk       : "aktivGrotesk Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 $activgrotesk_bold  : "aktivGrotesk Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $proximanova_bold   : "Proxima Nova Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $proximanova_xbold  : "Proxima Nova Extra Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;

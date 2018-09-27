@@ -1,3 +1,6 @@
+/*********************
+BUTTONS
+*********************/ 
 .button{
     font-family: $activgrotesk_bold;
     background: $medium-blue;
@@ -33,15 +36,35 @@
             color: $green;
             border-color: $green;
         }
+        &.solid{
+            &:focus,
+            &:hover,
+            &:active{
+                background: darken($green, 10%)!important;
+                border-color: darken($green, 10%)!important;
+                color: $white;
+            }
+        }
     }
     &.outline{
         background: $white;
         border: 1px solid $blue;
         color: $blue;
         @include transition($transition);
-        &:hover{
+        &:hover,
+        &:active{
             background: $blue;
             color: $white;
+        }
+        &.bg-teal{
+            background: transparent;
+            border: 1px solid $white;
+            color: $white;
+            &:hover,
+            &:active{
+                background: $white;
+                color: $teal;
+            }
         }
     }
 }

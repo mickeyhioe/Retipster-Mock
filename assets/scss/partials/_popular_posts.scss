@@ -1,0 +1,39 @@
+/*********************
+POPULAR POSTS
+*********************/
+.popular-posts{
+    &-item{
+        &:last-of-type(){
+            .post-content{
+                border-bottom: none;;
+            }
+        }
+        span{
+            display: block;
+            &.post-user{
+                span{
+                    display: inline-block;
+                }            
+            }
+            &.post-category,
+            &.post-user{
+                color: $gray;
+                font-size: .9em;
+            }
+        }
+        .post-content{
+            display: block;
+            padding: 20px;
+            border-bottom: 1px solid $light-gray;            
+            &:hover{
+                background: $blue;
+                .post-title,
+                .post-user,
+                .post-category{
+                    color: $white;
+                }
+            }
+        }
+       
+    }
+}

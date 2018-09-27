@@ -42,34 +42,6 @@
               array(
                 'icon'   => "icon-apartment",
                 'title'  => "Landlording"
-              ),
-              array(
-                'icon'   => "icon-sign",
-                'title'  => "Finding deals"
-              ),
-              array(
-                'icon'   => "icon-piggybank",
-                'title'  => "Saving money"
-              ),
-              array(
-                'icon'   => "icon-smiley",
-                'title'  => "Getting more done"
-              ),
-              array(
-                'icon'   => "icon-cellphone",
-                'title'  => "Technology"
-              ),
-              array(
-                'icon'   => "icon-piggybank",
-                'title'  => "Saving money"
-              ),
-              array(
-                'icon'   => "icon-smiley",
-                'title'  => "Getting more done"
-              ),
-              array(
-                'icon'   => "icon-cellphone",
-                'title'  => "Technology"
               )
             );
 

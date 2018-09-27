@@ -23,6 +23,7 @@
 
 
           <div class="large-6 medium-10 cell">
+              
              <!-- Main -->
              <div>
               <h1 class="text-blue">Welcome to REtipster!</h1>
@@ -39,19 +40,9 @@
     </section>
     <!-- /Section Intro -->
 
-    <!-- Section Popular Posts -->
-    <section id="popular-post" class="">
-      <div class="grid-container">
-        <div class="grid-x text-center align-center">
-          <div class="cell">
-            <h2 class="title-heart text-blue">Popular posts</h2>
-            <p><em>There is a pretty extensive library of articles throughout this <a href="articles.php">blog</a>.</em></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Section Popular Posts  -->
-                  
+    <?php include('includes/section-seth.php'); ?>
+
+    <?php include('includes/section-popular-post.php'); ?>                  
 
     <?php $padding="section-padding-top"; include('includes/section-club.php'); ?>
     

@@ -22,6 +22,17 @@ BOX WAVE
       @include bg-wave();
     }
   }
+  &-bottom{
+    &:after{
+      content:'';
+      display: block;
+      height: 40px;
+      width: 100%;
+      border: 1px solid $blue;
+      border-top: none;
+      @include bg-wave();
+    }
+  }
   &-top-icon{
     height: 40px;
     border: 1px solid $blue;

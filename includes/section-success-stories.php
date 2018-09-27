@@ -17,8 +17,8 @@
                 </div>
                 <div class="large-6 cell">
                   <div class="button-container-article flex-container align-middle">
-                    <h3 class="h5 title-side-hat flex-child-auto">Want to learn more? </h3>
-                    <a href="#" class="button rounded flex-child-auto">Take me to the blog</a>
+                    <h3 class="title-side-hat text-blue flex-child-auto">Want to learn more? </h3>
+                    <a href="articles.php" class="button rounded flex-child-auto">Take me to the blog</a>
                   </div>
                 </div>
               </div>

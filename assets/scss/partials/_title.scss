@@ -23,17 +23,22 @@ TITLE ICON
   }
 }
 
+/*********************
+TITLE SUCCESS STORIES
+*********************/ 
 .title-side-hat{
+  font-size: 1.2em;
+  margin-bottom: 0;
   &:before{
     background: url('../img/icon-hat.svg'); 
     content:'';
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 60px;
-    height: 30px;
+    width: 50px;
+    height: 25px;
     margin-right: 5px;
-    vertical-align: top;
+    vertical-align: middle;
   }
 }
 
@@ -105,11 +110,9 @@ SECTION TITLE
       display: inline-block;
       &:after, &:before{
         content: '';
-        -webkit-background-size: 100% 100%;
-        background-size: 100%;
         background-repeat: repeat-x;
-        background-position: center;
-        background-image: url(../img/title-wave.svg);
+        background-position: top center;
+        background-image: url(../img/wave-pattern-blue.svg);
         height: 15px;
         display: block;
       }

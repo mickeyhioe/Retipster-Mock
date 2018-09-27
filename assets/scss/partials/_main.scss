@@ -94,6 +94,50 @@ SECTION PADDING
     }
   }
 }
+.section-padding-main{
+  padding-top: 4em;
+  padding-bottom: 3em;
+  @include breakpoint(medium){
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+}
+
+/*********************
+SECTION MARGIN
+*********************/
+.section-margin{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @include breakpoint(medium){
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  @include breakpoint(large){
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  &-top{
+    margin-top: 20px;
+    margin-bottom: 0;
+    @include breakpoint(medium){
+      margin-top: 40px;
+    }
+    @include breakpoint(large){
+      margin-top: 60px;
+    }
+  }
+  &-bottom{
+    margin-bottom: 20px;
+    margin-top: 0;
+    @include breakpoint(medium){
+      margin-bottom: 40px;
+    }
+    @include breakpoint(large){
+      margin-bottom: 60px;
+    }
+  }
+}
 
 /*********************
 UTILITY
@@ -133,6 +177,9 @@ UTILITY
 
 .padding-3{
   padding: 2em;
+}
+.margin-3{
+  margin: 2em;
 }
 
 .box-shadow{
