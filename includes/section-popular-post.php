@@ -30,7 +30,7 @@
                             $title = $accordions[$num];
                     ?>
                         <li class="accordion-item" data-accordion-item>
-                            <a href="#" class="accordion-title"><?php echo $title; ?></a>
+                            <a href="#" class="accordion-title"><h3><?php echo $title; ?></h3></a>
                             <div class="accordion-content" data-tab-content>
                                 <?php include('includes/popular-posts.php');?>
                             </div>

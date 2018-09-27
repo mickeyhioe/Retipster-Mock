@@ -46,10 +46,9 @@ With that being said, I don’t want to leave you hanging, so rather than emaili
       <div class="grid-container">       
         <div class="grid-x grid-padding-x grid-margin-y">
           <div class="small-12 cell">
-            <div class="grid-container">
-              <div class="grid-x grid-padding-x">
+ 
                   
-                    <ul class="accordion" data-accordion data-allow-all-closed="true">
+                    <ul class="accordion box-wave-bottom" data-accordion data-allow-all-closed="true">
                   <li class="accordion-item" data-accordion-item>
                      
                     <a href="#" class="accordion-title"><h3>Customer support</h3></a>
@@ -101,9 +100,7 @@ With that being said, I don’t want to leave you hanging, so rather than emaili
                 
                 </ul>
                   
-              </div>
-                 
-            </div>
+ 
           </div>
         </div>        
       </div>

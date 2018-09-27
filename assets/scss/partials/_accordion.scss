@@ -9,6 +9,7 @@ ACCORDION
         }
     }
     .accordion-item{
+        background: $white;
         &.is-active{
             > .accordion-title{
                 &:before{
@@ -19,18 +20,15 @@ ACCORDION
         }
         &:last-child:not(.is-active){ 
             > .accordion-title{
-                border-color: $blue;
+                border-bottom: 1px solid $blue;
             }
         }
     
-        > .accordion-title{
-            font-size: 1.3em;            
-            font-family: $proximanova_bold;
+        > .accordion-title{ 
             color: $blue;
             border-color: $blue;
-            @include breakpoint(large){
-                font-size: 1.6em;
-                padding: 2rem;
+            h3{
+                margin-bottom: 0;
             }
             &:before{
                 content: '\f078';
