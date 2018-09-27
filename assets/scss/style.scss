@@ -7,7 +7,7 @@ Author: Mickey Hioe
 Author URI: http://mickeyhioe.com/
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: gulp, foundation 6 
+Tags: gulp, foundation 6
 */
 
 @import "partials/mixins";
@@ -72,6 +72,9 @@ Tags: gulp, foundation 6
 @import "partials/social_category";
 @import "partials/header";
 @import "partials/footer";
+@import "partials/form";
+@import "partials/toolbox-reources";
+@import "partials/contact";
 @import "partials/form";
 @import "partials/products";
 @import "partials/book_cover";

@@ -8,8 +8,13 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/js/vendor/owlcarousel/owl.carousel.min.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="assets/css/style.min.css?1">
     
+=======
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+>>>>>>> origin/master
   </head>
 
   <body>
@@ -32,7 +37,7 @@
               </div>
 
                <!-- Menu Container-->
-              <div class="top-bar-right">               
+              <div class="top-bar-right">
                 <div class="menu-container">
                   <?php include('includes/main-menu.php');?>
                 </div>
@@ -45,11 +50,11 @@
                   <!-- Menu Search -->
                   <div class="menu-search">
 
-                    
+
                     <!-- Search Button -->
                     <div class="menu-search-icon">
                       <a href="#" class="search-icon" id="open-search">
-                        <img src="assets/img/search.svg" alt="Search" class="icon-search">                        
+                        <img src="assets/img/search.svg" alt="Search" class="icon-search">
                       </a>
                     </div>
                     <!-- /Search Button -->
@@ -69,7 +74,7 @@
                   </div>
                   <!-- /Menu Search -->
                 </div>
-                
+
               </div>
             </div>
           </div>
@@ -78,7 +83,7 @@
     </header>
     <!-- /Header -->
 
-    <!-- Mobile Menu -->			
+    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <a href="#" id="close-menu" class="icon-close">
         <img src="assets/img/close.svg" alt="Close">

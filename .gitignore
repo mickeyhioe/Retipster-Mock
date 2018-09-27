@@ -51,3 +51,6 @@ node_modules/
 
 # Visual Studio Code
 .vscode
+assets/css/.style_BASE_727476.css.swp
+*.swp
+*.swp

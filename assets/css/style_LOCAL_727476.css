@@ -8,7 +8,7 @@ Author: Mickey Hioe
 Author URI: http://mickeyhioe.com/
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: gulp, foundation 6
+Tags: gulp, foundation 6 
 */
 /* ----------------------------------------------------------------------------
  * Mixins
@@ -1327,7 +1327,7 @@ td {
 p {
   margin-bottom: 1rem;
   font-size: inherit;
-  line-height: 1.3;
+  line-height: 1.6;
   text-rendering: optimizeLegibility; }
 
 em,
@@ -1439,7 +1439,7 @@ ol,
 dl {
   margin-bottom: 1rem;
   list-style-position: outside;
-  line-height: 1.3; }
+  line-height: 1.6; }
 
 li {
   font-size: inherit; }
@@ -8068,7 +8068,7 @@ td {
 p {
   margin-bottom: 1rem;
   font-size: inherit;
-  line-height: 1.3;
+  line-height: 1.6;
   text-rendering: optimizeLegibility; }
 
 em,
@@ -11359,10 +11359,10 @@ a.thumbnail {
   src: url("../fonts/proximaNova/ProximaNova-Bold.eot#iefix") format("embedded-opentype"), url("../fonts/proximaNova/ProximaNova-Bold.woff") format("woff"), url("../fonts/proximaNova/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/proximaNova/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg"); }
 
 .text-black {
-  color: #000000; }
+  color: black; }
 
 .text-white {
-  color: #ffffff; }
+  color: white; }
 
 .text-blue {
   color: #2c4c61; }
@@ -11386,10 +11386,10 @@ a.thumbnail {
   color: #82939f; }
 
 .bg-black {
-  background: #000000; }
+  background: black; }
 
 .bg-white {
-  background: #ffffff; }
+  background: white; }
 
 .bg-blue {
   background: #2c4c61; }
@@ -11422,7 +11422,7 @@ body {
 
 @media print, screen and (min-width: 40em) {
   p {
-    font-size: 1em; } }
+    font-size: 1.1em; } }
 
 h1, h2, h3,
 .h1, .h2, .h3 {
@@ -11493,7 +11493,7 @@ SECTION 1
     background-size: contain;
     background-position: top left;
     background-repeat: no-repeat;
-    background-color: #ffffff;
+    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -11614,59 +11614,6 @@ SECTION MARGIN
         margin-bottom: 60px; } }
 
 /*********************
-BRAND CAROUSEL
-*********************/
-.brands-carousel {
-  width: 100%;
-  margin: auto;
-  border: 2px solid #E7EBEE;
-  height: 92px;
-  position: relative;
-  margin-top: 10px;
-  background: #fff; }
-  .brands-carousel .brands-item {
-    height: 100%;
-    position: relative; }
-    .brands-carousel .brands-item:after {
-      content: '';
-      height: 27px;
-      width: 2px;
-      position: absolute;
-      background-color: #EAEEEF;
-      right: 1px;
-      top: 50%;
-      margin-top: -14px; }
-    .brands-carousel .brands-item img {
-      height: 100%;
-      -webkit-transform: scale(0.76);
-      transform: scale(0.76); }
-  .brands-carousel .owl-stage-outer, .brands-carousel .owl-stage, .brands-carousel .owl-item {
-    height: 100%; }
-  .brands-carousel .owl-nav {
-    display: block !important; }
-    .brands-carousel .owl-nav .owl-next,
-    .brands-carousel .owl-nav .owl-prev {
-      width: 34px;
-      height: 34px;
-      position: absolute;
-      outline: none;
-      top: 50%;
-      margin-top: -17px;
-      z-index: 5;
-      background-position: center;
-      background-size: 34px;
-      background-repeat: no-repeat; }
-      .brands-carousel .owl-nav .owl-next span,
-      .brands-carousel .owl-nav .owl-prev span {
-        display: none; }
-    .brands-carousel .owl-nav .owl-prev {
-      left: -18px;
-      background: url(../img/arrow_left.svg) !important; }
-    .brands-carousel .owl-nav .owl-next {
-      right: -18px;
-      background: url(../img/arrow_right.svg) !important; }
-
-/*********************
 UTILITY
 *********************/
 .full-height {
@@ -11733,83 +11680,6 @@ ICON
 *********************/
 .icon-shop {
   background-image: url(../img/icon-shop.svg); }
-.box-white {
-  background-color: white;
-  border: 1px solid #2c4c61;
-  border-bottom: none; }
-
-/*********************
-BOOK COVER
-*********************/
-.book-cover {
-  background-size: cover;
-  background-image: url(../img/investor-hacks.svg);
-  height: 250px;
-  padding: 20px;
-  position: relative; }
-  @media print, screen and (min-width: 40em) {
-    .book-cover {
-      height: 400px; } }
-  .book-cover.building {
-    background-image: url(../img/building.svg); }
-  .book-cover-title {
-    width: 60%; }
-    @media print, screen and (min-width: 40em) {
-      .book-cover-title {
-        width: 100%;
-        margin-top: 20px;
-        text-shadow: none; } }
-  .book-cover-author {
-    position: absolute;
-    bottom: 20px; }
-    @media print, screen and (min-width: 40em) {
-      .book-cover-author {
-        text-shadow: none; } }
-
-.title-money:before {
-  content: '';
-  display: block;
-  background: url(../img/icon-money.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 120px;
-  height: 100px;
-  margin: 0 auto; }
-
-.title-mail {
-  margin-bottom: 20px;
-  text-align: center; }
-  @media print, screen and (min-width: 40em) {
-    .title-mail {
-      text-align: left; } }
-  .title-mail:before {
-    content: '';
-    display: block;
-    background: url(../img/icon-mail.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 60px;
-    height: 25px;
-    margin: 0 auto 10px; }
-    @media print, screen and (min-width: 40em) {
-      .title-mail:before {
-        display: inline-block;
-        vertical-align: middle;
-        margin-bottom: 0;
-        margin-right: 5px; } }
-
-.title-bg-white {
-  display: block;
-  margin: 0;
-  padding: 10px;
-  background: white; }
-  @media print, screen and (min-width: 40em) {
-    .title-bg-white {
-      display: inline-block;
-      width: 60%;
-      border-left: 1px solid #2c4c61;
-      border-right: 1px solid #2c4c61;
-      padding: 30px 40px; } }
 
 /*********************
 NEWSLETTER
@@ -12157,7 +12027,7 @@ ARTICLES
   margin-top: 40px;
   margin-bottom: 40px; }
   .article-grid-item {
-    background: #ffffff;
+    background: white;
     position: relative; }
     @media print, screen and (min-width: 40em) {
       .article-grid-item-inner.big .img {
@@ -12177,18 +12047,7 @@ ARTICLES
         .article-grid-item-inner .img {
           height: 200px; } }
     .article-grid-item-inner .cat-icon {
-<<<<<<< HEAD
       border: 5px solid white;
-=======
-      width: 50px;
-      height: 50px;
-      background-image: url(../img/icon-house.svg);
-      background-size: 75%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-color: #b7e1d8;
-      border: 5px solid #ffffff;
->>>>>>> origin/master
       position: absolute;
       bottom: 25px;
       left: 20px; }
@@ -12623,9 +12482,9 @@ BUTTONS
   border: 2px solid #3d92cc; }
   .button:focus {
     background: #3d92cc;
-    color: #ffffff; }
+    color: white; }
   .button:hover, .button:active {
-    background: #ffffff;
+    background: white;
     color: #3d92cc; }
   .button.large {
     font-size: 1em;
@@ -12671,14 +12530,8 @@ TOOLBOX
 *********************/
 .toolbox {
   padding-top: 40px; }
-  .toolbox-resources {
-    padding: 20px;
-    text-align: left; }
-    @media print, screen and (min-width: 40em) {
-      .toolbox-resources {
-        padding: 40px 0px; } }
   .toolbox-item {
-    background: #ffffff;
+    background: white;
     border: 1px solid #2c4c61;
     display: block;
     position: relative;
@@ -12707,7 +12560,7 @@ TOOLBOX
     .toolbox-icon span {
       border: 1px solid #2c4c61;
       border-radius: 100%;
-      background-color: #ffffff;
+      background-color: white;
       background-size: 60%;
       background-position: center center;
       position: absolute;
@@ -12762,7 +12615,7 @@ HELP CATEGORY
     padding-top: 40px; } }
 
 .help-category-item {
-  background: #ffffff;
+  background: white;
   display: block;
   position: relative;
   margin-bottom: 40px !important; }
@@ -12772,7 +12625,7 @@ HELP CATEGORY
   .help-category-icon span {
     width: 70px;
     height: 70px;
-    border: 5px solid #ffffff;
+    border: 5px solid white;
     border-radius: 100%;
     background-color: #b7e1d8;
     background-size: 60%;
@@ -12788,7 +12641,7 @@ HELP CATEGORY
         width: 90px;
         height: 90px;
         margin-left: -45px;
-        border: 10px solid #ffffff;
+        border: 10px solid white;
         top: -35px; } }
 
 .help-category-content {
@@ -12810,7 +12663,7 @@ SOCIAL CATEGORY
 .social-category {
   padding-top: 40px; }
   .social-category-item {
-    background: #ffffff;
+    background: white;
     display: block;
     position: relative;
     margin-bottom: 40px !important; }
@@ -12894,7 +12747,7 @@ HEADER
   top: -70px; }
 
 .top-bar {
-  background: #ffffff;
+  background: white;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   padding: 0; }
@@ -12918,7 +12771,7 @@ HEADER
       .top-bar .logo {
         margin-left: 20px; } }
   .top-bar ul {
-    background: #ffffff; }
+    background: white; }
 
 .menu-container {
   display: none; }
@@ -13042,244 +12895,6 @@ footer .menu a {
     @media print, screen and (min-width: 40em) {
       .input.large {
         width: calc(100% - 10px); } }
-
-/*********************
-TOOLBOX RESOURCES
-*********************/
-.toolbox-item-resources {
-  background: white;
-  border: 1px solid #2c4c61;
-  display: block;
-  position: relative; }
-
-@media print, screen and (min-width: 768px) {
-  .toolbox-item {
-    padding-bottom: 40px; }
-  .toolbox-item:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    height: 40px;
-    width: 100%;
-    border-top: 1px solid #2c4c61;
-    background-image: url(../img/wave-pattern.svg);
-    background-repeat: repeat;
-    background-position: center center; } }
-
-.toolbox-resources {
-  padding: 40px 20px;
-  text-align: left; }
-
-.toolbox-resources .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a:after {
-  display: none; }
-
-.toolbox-resources .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a:before {
-  display: block;
-  width: 0;
-  height: 0;
-  border: 6px inset;
-  content: "";
-  border-bottom-width: 0;
-  border-top-style: solid;
-  border-color: #3d92cc transparent transparent;
-  position: absolute;
-  top: 50%;
-  margin-top: -3px;
-  left: 1rem;
-  margin-right: 20px;
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg); }
-
-.toolbox-resources p {
-  margin: 0;
-  padding-left: 20px;
-  color: #2c4c61 !important; }
-
-.cell.sidebar.fixed {
-  position: fixed;
-  top: 0;
-  width: auto; }
-
-.toolbox-resources h4 {
-  margin: 0;
-  /*margin-bottom: 40px;*/
-  text-align: center;
-  color: #2c4c61 !important; }
-
-.toolbox-resources .divider {
-  content: '';
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  margin-bottom: 40px;
-  width: 38px;
-  height: 1px;
-  background-color: #dfe4e7; }
-
-@media screen and (max-width: 768px) {
-  .media-object.stack-for-small .media-object-section {
-    padding: 0;
-    padding-bottom: 1rem;
-    display: block; } }
-
-.toolbox-resources .media-object img {
-  max-width: 100%; }
-
-.toolbox-resources h5 {
-  margin: 0;
-  margin-bottom: 20px;
-  padding-left: 20px;
-  color: #2c4c61 !important; }
-
-.toolbox-resources .media-object {
-  display: block;
-  margin-bottom: 1rem; }
-
-.toolbox-resources .media-object-section {
-  display: table-cell; }
-
-.toolbox-resources .media-object-section .thumbnail {
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
-.toolbox-resources .media-object-section.middle {
-  vertical-align: middle;
-  width: 30%; }
-
-@media screen and (max-width: 768px) {
-  .toolbox-resources .media-object-section.middle {
-    vertical-align: middle;
-    width: 100%; } }
-
-.toolbox-resources .media-object-section a {
-  color: #3d92cc;
-  -webkit-transition: color 0.4s ease;
-  transition: color 0.4s ease;
-  font-weight: 700; }
-
-.toolbox-resources .media-object-section a:hover {
-  color: #cc0000;
-  text-decoration: none; }
-
-.toolbox-resources ul.nested li a {
-  margin: 0;
-  padding-left: 40px;
-  color: #82939f !important;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-
-.toolbox-resources a:hover {
-  text-decoration: underline; }
-
-/*********************
-SIDEBAR
-*********************/
-.sidebar {
-  will-change: min-height; }
-
-.sidebar__inner {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  /* For browsers don't support translate3d. */
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  will-change: position, transform; }
-
-/*********************
-CONTACT
-*********************/
-.contact-page .section-title.main a, .contact-accordion .accordion-content a {
-  color: #3d92cc;
-  -webkit-transition: color 0.4s ease;
-  transition: color 0.4s ease; }
-
-.contact-page .section-title.main a:hover, .accordion a:hover {
-  color: #cc0000;
-  text-decoration: none; }
-
-.contact-accordion .accordion-item.is-active, .contact-accordion .accordion-item.is-active, .contact-accordion .accordion-item.is-active .accordion-title {
-  background-color: white; }
-
-.contact-accordion .accordion {
-  border-bottom: 1px solid #2c4c61;
-  width: 100%; }
-
-.contact-accordion .accordion:after {
-  content: '';
-  display: block;
-  bottom: 0;
-  height: 40px;
-  width: 100%;
-  border-top: 1px solid #2c4c61;
-  border-left: 1px solid #2c4c61;
-  border-right: 1px solid #2c4c61;
-  background-image: url(../img/wave-pattern.svg);
-  background-repeat: repeat;
-  background-position: center center;
-  background-color: #f0f2f3; }
-
-.contact-accordion .accordion-item {
-  border-left: 1px solid #2c4c61;
-  border-right: 1px solid #2c4c61;
-  position: relative;
-  background-color: #dfe4e7;
-  cursor: pointer;
-  color: #2c4c61; }
-
-.contact-accordion .accordion-item a.accordion-title:hover {
-  color: #2c4c61; }
-
-.contact-accordion .accordion-title {
-  position: relative;
-  border: none;
-  border-bottom: 1px solid #2c4c61;
-  border-top: 1px solid #2c4c61;
-  padding: 25px 64px;
-  display: block;
-  background-color: #dfe4e7;
-  border-bottom: 0;
-  color: #2c4c61; }
-
-.contact-accordion .accordion-title h3 {
-  margin-bottom: 0; }
-
-.contact-accordion .accordion-title:hover, .contact-accordion .accordion-title:focus {
-  background-color: #f0f2f3; }
-
-.contact-accordion .accordion-title:before {
-  content: '';
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  border: 1px solid #2c4c61;
-  background-image: url(../img/arrow_drop_down.svg);
-  background-repeat: no-repeat;
-  background-size: 12px;
-  background-position: center;
-  top: 50%;
-  margin-top: -18px;
-  right: 37px; }
-
-.contact-accordion .accordion-item.is-active .accordion-title:before {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg); }
-
-.contact-accordion .accordion-item.is-active .accordion-title {
-  border-bottom: 1px solid #2c4c61; }
-
-:last-child:not(.is-active) > .accordion-title {
-  border-bottom: none; }
-
-.contact-accordion .accordion-content {
-  display: none;
-  font-size: 1.125em;
-  padding: 30px 68px 20px;
-  border: none;
-  background-color: white;
-  color: #2c4c61; }
 
 /*********************
 PRODUCTS
