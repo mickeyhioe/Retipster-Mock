@@ -1,0 +1,72 @@
+/*********************
+TESTIMONIALS
+*********************/
+
+.testimonials{
+    margin-top: 2em;
+    &-item{
+        padding-bottom: 3em;
+        blockquote.testimonials-content{
+            border: none;
+            text-align: center;
+            p{
+                font-size: .8em;
+                font-family: $activgrotesk;
+                margin-bottom: 1em;
+                color: $gray;
+                font-style: normal;
+                @include breakpoint(medium){
+                    font-size: .9em;
+                }
+            }
+            &:before{
+                content: '\f10d';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                display: block;
+                font-style: normal;
+                text-align: center;
+                font-size: 1.2em;
+                border-radius: 100%;                
+                background-color: $light-green;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                color: $blue;
+                margin: 0 auto 10px;
+                @include breakpoint(medium){
+                    font-size: 1.6em;
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    margin-bottom: 20px;
+                }
+            }
+            &:after{
+                content: '';
+                display: block;
+                width: 100px;
+                height: 3px;
+                background-color: $light-green;
+                margin: 0 auto;
+            }
+
+        }
+    }
+    &-author,
+    &-position{
+        display: block;
+        text-align: center;        
+    }
+    &-author{
+        font-family: $proximanova_bold;
+        color: $blue;
+        font-size: 1.1em;
+    }
+    &-position{
+        font-family: $activgrotesk;
+        font-size: .8em;
+        color: $medium-gray;
+        letter-spacing: .05em;
+    }
+}

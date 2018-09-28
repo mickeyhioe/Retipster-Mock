@@ -13081,115 +13081,6 @@ SIDEBAR
   transform: translate3d(0, 0, 0);
   will-change: position, transform; }
 
-/*********************
-CONTACT
-*********************/
-/*
-.contact-page .section-title.main a, .contact-accordion .accordion-content a {
-  color: $medium-blue;
-  transition: color 0.4s ease;
-}
-
-.contact-page .section-title.main a:hover, .accordion a:hover {
-  color: $red ;
-  text-decoration: none;
-}
-
-
-.contact-accordion .accordion-item.is-active, .contact-accordion .accordion-item.is-active, .contact-accordion .accordion-item.is-active .accordion-title {
-  background-color: $white;
-}
-
-.contact-accordion .accordion {
-  border-bottom: 1px solid $blue;
-  width: 100%;
-}
-
-.contact-accordion .accordion:after {
-  content: '';
-  display: block;
-  bottom: 0;
-  height: 40px;
-  width: 100%;
-  border-top: 1px solid $blue;
-  border-left: 1px solid $blue;
-  border-right: 1px solid $blue;
-  background-image: url(../img/wave-pattern.svg);
-  background-repeat: repeat;
-  background-position: center center;
-  background-color: $ultra-light-gray;
-}
-
-.contact-accordion .accordion-item {
-  border-left: 1px solid $blue;
-  border-right: 1px solid $blue;
-  position: relative;
-  background-color: $light-gray;
-  cursor: pointer;
-  color: $blue;
-}
-
-.contact-accordion .accordion-item a.accordion-title:hover {
-  color: $blue;
-}
-
-.contact-accordion .accordion-title {
-  position: relative;
-  border: none;
-  border-bottom: 1px solid $blue;
-  border-top: 1px solid $blue;
-  padding: 25px 64px;
-  display: block;
-  background-color: $light-gray;
-  border-bottom: 0;
-  color: $blue;
-}
-
-.contact-accordion .accordion-title h3 {
-  margin-bottom: 0;
-}
-
-.contact-accordion .accordion-title:hover, .contact-accordion .accordion-title:focus {
-  background-color: $ultra-light-gray;
-}
-
-.contact-accordion .accordion-title:before {
-  content: '';
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  border: 1px solid $blue;
-  background-image: url(../img/arrow_drop_down.svg);
-  background-repeat: no-repeat;
-  -webkit-background-size: 12px 12px;
-  background-size: 12px;
-  background-position: center;
-  top: 50%;
-  margin-top: -18px;
-  right: 37px;
-}
-
-.contact-accordion .accordion-item.is-active .accordion-title:before {
-  transform: rotate(180deg);
-}
-
-.contact-accordion .accordion-item.is-active .accordion-title {
-  border-bottom: 1px solid $blue;
-}
-
-:last-child:not(.is-active)>.accordion-title {
-  border-bottom: none;
-}
-
-.contact-accordion .accordion-content {
-  display: none;
-  font-size: 1.125em;
-  padding: 30px 68px 20px;
-  border: none;
-  background-color: $white;
-  color: $blue;
-}
-*/
 .input {
   -webkit-box-shadow: none;
   box-shadow: none; }
@@ -13762,3 +13653,64 @@ POPULAR POSTS
       color: white; }
     .popular-posts-item .post-content:hover .post-content-bg {
       opacity: .5; }
+
+/*********************
+TESTIMONIALS
+*********************/
+.testimonials {
+  margin-top: 2em; }
+  .testimonials-item {
+    padding-bottom: 3em; }
+    .testimonials-item blockquote.testimonials-content {
+      border: none;
+      text-align: center; }
+      .testimonials-item blockquote.testimonials-content p {
+        font-size: .8em;
+        font-family: "aktivGrotesk Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        margin-bottom: 1em;
+        color: #5c6e7b;
+        font-style: normal; }
+        @media print, screen and (min-width: 40em) {
+          .testimonials-item blockquote.testimonials-content p {
+            font-size: .9em; } }
+      .testimonials-item blockquote.testimonials-content:before {
+        content: '\f10d';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        display: block;
+        font-style: normal;
+        text-align: center;
+        font-size: 1.2em;
+        border-radius: 100%;
+        background-color: #b7e1d8;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        color: #2c4c61;
+        margin: 0 auto 10px; }
+        @media print, screen and (min-width: 40em) {
+          .testimonials-item blockquote.testimonials-content:before {
+            font-size: 1.6em;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            margin-bottom: 20px; } }
+      .testimonials-item blockquote.testimonials-content:after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 3px;
+        background-color: #b7e1d8;
+        margin: 0 auto; }
+  .testimonials-author, .testimonials-position {
+    display: block;
+    text-align: center; }
+  .testimonials-author {
+    font-family: "Proxima Nova Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #2c4c61;
+    font-size: 1.1em; }
+  .testimonials-position {
+    font-family: "aktivGrotesk Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: .8em;
+    color: #82939f;
+    letter-spacing: .05em; }

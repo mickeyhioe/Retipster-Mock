@@ -7,6 +7,7 @@
         <li <?php if($page == 'Store'){ echo 'class="active"'; }?>><a href="store.php">Store</a></li>
         <li <?php if($page == 'About'){ echo 'class="active"'; }?>><a href="about.php">About</a></li>
         <li <?php if($page == 'Contact'){ echo 'class="active"'; }?>><a href="contact.php">Contact</a></li>
+        <li <?php if($page == 'Testimonials'){ echo 'class="active"'; }?>><a href="testimonials.php">Testimonials</a></li>
     </ul>
 </nav>
 <!-- /Main Menu -->
