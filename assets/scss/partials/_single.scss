@@ -275,13 +275,15 @@ ARTICLE CONTENT
 	}
 
 	blockquote{
-		border-left: 10px solid $medium-blue;
-		p{
-			font-size: 1.2em;
-			line-height: 1.6;
-			color: $medium-blue;
-			font-style: italic;
-		}
+		border-left: 8px solid $medium-blue;
+		padding-top: 0;
+	}
+	blockquote,
+	blockquote p{
+		font-size: 1.2em;
+		line-height: 1.6;
+		color: $medium-blue;
+		font-style: italic;
 	}
 
 	.video-wrapper {

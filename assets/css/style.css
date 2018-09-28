@@ -12368,12 +12368,15 @@ ARTICLE CONTENT
   text-align: center; }
 
 .article-content blockquote {
-  border-left: 10px solid #3d92cc; }
-  .article-content blockquote p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #3d92cc;
-    font-style: italic; }
+  border-left: 8px solid #3d92cc;
+  padding-top: 0; }
+
+.article-content blockquote,
+.article-content blockquote p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #3d92cc;
+  font-style: italic; }
 
 .article-content .video-wrapper {
   position: relative;
