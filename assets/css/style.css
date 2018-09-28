@@ -13717,16 +13717,16 @@ TESTIMONIALS
     padding-bottom: 3em; }
     .testimonials-item blockquote.testimonials-content {
       border: none;
-      text-align: center; }
+      text-align: center;
+      font-size: .8em; }
+      @media print, screen and (min-width: 40em) {
+        .testimonials-item blockquote.testimonials-content {
+          font-size: .9em; } }
       .testimonials-item blockquote.testimonials-content p {
-        font-size: .8em;
         font-family: "aktivGrotesk Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         margin-bottom: 1em;
         color: #5c6e7b;
         font-style: normal; }
-        @media print, screen and (min-width: 40em) {
-          .testimonials-item blockquote.testimonials-content p {
-            font-size: .9em; } }
       .testimonials-item blockquote.testimonials-content:before {
         content: '\f10d';
         font-family: 'Font Awesome 5 Free';
@@ -13744,7 +13744,7 @@ TESTIMONIALS
         margin: 0 auto 10px; }
         @media print, screen and (min-width: 40em) {
           .testimonials-item blockquote.testimonials-content:before {
-            font-size: 1.6em;
+            font-size: 2em;
             width: 80px;
             height: 80px;
             line-height: 80px;
