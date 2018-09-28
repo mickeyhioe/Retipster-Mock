@@ -13611,25 +13611,41 @@ ACCORDION
       border-color: #2c4c61; }
 
 /*********************
-POPULAR POSTS
+POPULAR POSTS & SEARCH
 *********************/
-.popular-posts-item:last-of-type .post-content {
+.popular-posts-item:last-of-type .post-content,
+.search-results-item:last-of-type .post-content {
   border-bottom: none; }
 
-.popular-posts-item span {
+.popular-posts-item span,
+.search-results-item span {
   display: block; }
-  .popular-posts-item span.post-user span {
+  .popular-posts-item span.post-category,
+  .search-results-item span.post-category {
+    font-family: "aktivGrotesk Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  .popular-posts-item span.post-user span,
+  .search-results-item span.post-user span {
     display: inline-block; }
-  .popular-posts-item span.post-category, .popular-posts-item span.post-user {
+  .popular-posts-item span.post-category, .popular-posts-item span.post-user,
+  .search-results-item span.post-category,
+  .search-results-item span.post-user {
     color: #5c6e7b;
     font-size: .9em; }
 
-.popular-posts-item .post-content {
+.popular-posts-item p.post-excerpt,
+.search-results-item p.post-excerpt {
+  font-size: .9em;
+  color: #82939f;
+  margin-bottom: 0; }
+
+.popular-posts-item .post-content,
+.search-results-item .post-content {
   display: block;
   padding: 20px;
   border-bottom: 1px solid #dfe4e7;
   position: relative; }
-  .popular-posts-item .post-content-bg {
+  .popular-posts-item .post-content-bg,
+  .search-results-item .post-content-bg {
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13643,16 +13659,40 @@ POPULAR POSTS
     -webkit-transition: all 0.3s ease-in-out;
     -kthtml-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
-  .popular-posts-item .post-content .post-title {
+  .popular-posts-item .post-content .post-title,
+  .search-results-item .post-content .post-title {
     margin-bottom: 1em; }
-  .popular-posts-item .post-content:hover {
+  .popular-posts-item .post-content:hover,
+  .search-results-item .post-content:hover {
     background-color: rgba(44, 76, 97, 0.8); }
     .popular-posts-item .post-content:hover .post-title,
     .popular-posts-item .post-content:hover .post-user,
-    .popular-posts-item .post-content:hover .post-category {
+    .popular-posts-item .post-content:hover .post-category,
+    .popular-posts-item .post-content:hover .post-excerpt,
+    .search-results-item .post-content:hover .post-title,
+    .search-results-item .post-content:hover .post-user,
+    .search-results-item .post-content:hover .post-category,
+    .search-results-item .post-content:hover .post-excerpt {
       color: white; }
-    .popular-posts-item .post-content:hover .post-content-bg {
+    .popular-posts-item .post-content:hover .post-content-bg,
+    .search-results-item .post-content:hover .post-content-bg {
       opacity: .5; }
+
+.search-term {
+  font-family: "Proxima Nova Bold", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 1em;
+  margin-bottom: 1em; }
+  @media print, screen and (min-width: 40em) {
+    .search-term {
+      font-size: 1.2em;
+      margin-bottom: 2em; } }
+  .search-term:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #dfe4e7;
+    margin-top: .5em; }
 
 /*********************
 TESTIMONIALS
