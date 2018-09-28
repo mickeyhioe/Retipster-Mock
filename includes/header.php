@@ -94,7 +94,7 @@
       <a href="#" id="close-search" class="icon-close">
         <img src="assets/img/close.svg" alt="Close">
       </a>
-      <form action="#" role="search" method="get" id="searchform" class="search-form form">
+      <form action="search.php" role="search" method="get" id="searchform" class="search-form form">
         <div class="grid-container section-padding">
           <div class="grid-x grid-padding-y align-center-middle text-center" style="height: 100fv;">
             <div class="cell small-12">
