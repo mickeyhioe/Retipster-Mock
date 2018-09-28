@@ -187,50 +187,48 @@ MOBILE MENU
 *********************/
 
 .mobile-menu {
-    position: fixed;
-    background: $light-green;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .35s, visibility .35s, height .35s;
-    overflow: hidden;
-	z-index: 99999;
+  position: fixed;
+  background: $light-green;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  z-index: 99999;
   
-    &.open {
-        opacity: .95;
-        visibility: visible;
-        height: 100%;
-    
-        li {
-        animation: fadeInRight .5s ease forwards;
-        animation-delay: .35s;
-        
-        &:nth-of-type(2) {
-            animation-delay: .4s;
-        }
-        &:nth-of-type(3) {
-            animation-delay: .45s;
-        }
-        &:nth-of-type(4) {
-            animation-delay: .50s;
-        }
-        &:nth-of-type(5) {
-            animation-delay: .55s;
-        }
-        &:nth-of-type(6) {
-            animation-delay: .60s;
-        }
+  &.open {
+    opacity: .95;
+    visibility: visible;
+    height: 100%;
+  
+    li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s;      
+      &:nth-of-type(2) {
+          animation-delay: .4s;
+      }
+      &:nth-of-type(3) {
+          animation-delay: .45s;
+      }
+      &:nth-of-type(4) {
+          animation-delay: .50s;
+      }
+      &:nth-of-type(5) {
+          animation-delay: .55s;
+      }
+      &:nth-of-type(6) {
+          animation-delay: .60s;
+      }
     }
   }
   nav {
     position: relative;
-    height: 70%;
+    height: 80%;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem;
 		letter-spacing: .05em;
 		line-height: 1.2;
     text-align: center;
@@ -239,17 +237,18 @@ MOBILE MENU
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    display: inline-block;
     position: relative;
-    height: 100%; 
+    display: flex;
+    flex-direction: column;
     
     li {
-      display: block;
-      height: calc(100% / 6);
       min-height: 50px;
       position: relative;
       opacity: 0;
-			
+      justify-content: center;
+      flex: 1;
+      display: flex;
+      align-items: center;
 			&.active{
 				a{
 					color: $blue;
@@ -262,8 +261,7 @@ MOBILE MENU
         text-decoration: none;
         background: none!important;
         overflow: hidden;
-				font-family: $proximanova_bold;
-				
+        font-size: 1.6em!important;				
 				&:focus{
 					color: $blue;
 				}
